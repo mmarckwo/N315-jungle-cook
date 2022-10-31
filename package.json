@@ -1,0 +1,27 @@
+{
+  "name": "n315-jungle-cook",
+  "version": "1.0.0",
+  "description": "N315 Final",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "serve": "live-server",
+    "compile-sass": "sass scss/styles.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmarckwo/N315-jungle-cook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmarckwo/N315-jungle-cook/issues"
+  },
+  "homepage": "https://github.com/mmarckwo/N315-jungle-cook#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
