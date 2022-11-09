@@ -1,0 +1,32 @@
+.hero {
+    img {
+        width: 1028px;
+        height: 800px;
+    }
+    .bigcircle{
+        border-radius: 26px;
+        background-color: #FFD972;
+        width: 300px;
+        height: 300px;
+
+
+        h2{
+            font-family: 'Caveat';
+        }
+        p {
+            font-family: 'Lato';
+        }
+
+    }
+    .smallscircle{
+        border-radius: 26px;
+        background-color: pink;
+        width: 150px;
+        height: 300px;
+
+        p {
+            font-family: 'Lato';
+        }
+
+    }
+}

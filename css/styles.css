@@ -24,6 +24,7 @@ nav {
   font-size: 25pt;
   justify-content: space-evenly;
   margin-top: 10px;
+  position: absolute;
 }
 nav .logo {
   width: 150px;
@@ -56,6 +57,7 @@ footer {
   font-style: italic;
   font-size: 15pt;
   justify-content: space-evenly;
+  position: absolute;
 }
 footer .c1 {
   justify-content: left;
@@ -64,11 +66,12 @@ footer .c1 {
 footer .c1 p {
   color: black;
 }
-footer .footerlinks a {
-  justify-content: space-evenly;
+footer .footlinks a {
+  justify-content: space-between;
   align-items: center;
   text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 footer .socials {
   justify-content: space-between;
@@ -82,6 +85,32 @@ footer .socials .fb {
 }
 footer .socials .ig {
   margin: 5px;
+}
+
+.hero img {
+  width: 1028px;
+  height: 800px;
+}
+.hero .bigcircle {
+  border-radius: 26px;
+  background-color: #FFD972;
+  width: 300px;
+  height: 300px;
+}
+.hero .bigcircle h2 {
+  font-family: "Caveat";
+}
+.hero .bigcircle p {
+  font-family: "Lato";
+}
+.hero .smallscircle {
+  border-radius: 26px;
+  background-color: pink;
+  width: 150px;
+  height: 300px;
+}
+.hero .smallscircle p {
+  font-family: "Lato";
 }
 
 /*# sourceMappingURL=styles.css.map */
