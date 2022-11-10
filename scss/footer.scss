@@ -1,21 +1,21 @@
 footer {
     width: 100%;
-    height: 40px;
-    background-color: transparent;
+    height: 60px;
     display: flex;
     font-family: 'Lato';
     font-style: italic;
     font-size: 15pt;
     justify-content: space-evenly;
-    margin-bottom: 10px;
-    position: absolute;
+    align-items: center;
+    // position:absolute;
+    background-color:transparent;
 
 
 
 
     .c1 {
-        justify-content:left;
-        align-items: left;
+        display: flex;
+        align-items: center;
         p {
             color: black;
         }
@@ -23,12 +23,12 @@ footer {
 
 
     .footlinks {
+        justify-content:center;
+        display: flex;
         a {
-            justify-content: space-between;
-            align-items: center;
+            margin:10px ;
             text-decoration: none;
             color: black;
-            text-decoration: none;
     
         }
     }
@@ -36,7 +36,6 @@ footer {
 
     .socials{
         justify-content: space-between;
-        align-items: right;
         width: 30px;
         height: 30px;
         display: flex;

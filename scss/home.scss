@@ -2,11 +2,13 @@
   width: 100%;
   height: 100%;
   background-color: #f25c54;
+  z-index: -1;
+  position:relative;
 
   .heroimg {
     img {
       width: 100%;
-      height: 100%;
+      // height: 100%;
       opacity: 30%;
     }
   }
@@ -26,15 +28,18 @@
       top: 75%;
       left: 50%;
       transform: translate(-50%, -50%);
+      
             .textbox {
                 width: 162px;
                 height: 162px;
-        
                     h2 {
                     font-family: "Caveat";
+                    font-size: 24pt;
                     }
                     p {
                     font-family: "Lato";
+                    font-size: 13pt;
+                    letter-spacing: 1pt;
                     }
             }
     }
@@ -54,6 +59,9 @@
         height: 162px;
         p {
           font-family: "Lato";
+          font-style: italic;
+          font-size: 10pt;
+          letter-spacing: 1pt;
         }
       }
     }

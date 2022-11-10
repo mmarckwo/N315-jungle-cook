@@ -2,7 +2,6 @@
 export function changePage(pageID, subPageID, callback) {
     if (pageID == "" || pageID == "home") {
         $.get(`pages/home.html`, function (data) {
-          console.log("data" + data);
             $("#app").html(data);
             if (callback) {
             callback();
