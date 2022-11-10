@@ -1,32 +1,61 @@
 .hero {
+  width: 100%;
+  height: 100%;
+  background-color: #f25c54;
+
+  .heroimg {
     img {
-        width: 1028px;
-        height: 800px;
+      width: 100%;
+      height: 100%;
+      opacity: 30%;
     }
-    .bigcircle{
-        border-radius: 26px;
-        background-color: #FFD972;
-        width: 300px;
-        height: 300px;
+  }
 
+  .centerpage {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 
-        h2{
-            font-family: 'Caveat';
-        }
+    .bigcircle {
+      border-radius: 200px;
+      background-color: #ffd972;
+      width: 358px;
+      height: 358px;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+            .textbox {
+                width: 162px;
+                height: 162px;
+        
+                    h2 {
+                    font-family: "Caveat";
+                    }
+                    p {
+                    font-family: "Lato";
+                    }
+            }
+    }
+
+    .smallcircle {
+      border-radius: 200px;
+      background-color: #fcbcb8;
+      width: 168px;
+      height: 168px;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(50%, 75%);
+
+      .textbox {
+        width: 162px;
+        height: 162px;
         p {
-            font-family: 'Lato';
+          font-family: "Lato";
         }
-
+      }
     }
-    .smallscircle{
-        border-radius: 26px;
-        background-color: pink;
-        width: 150px;
-        height: 300px;
-
-        p {
-            font-family: 'Lato';
-        }
-
-    }
+  }
 }
