@@ -1,67 +1,69 @@
-.hero {
-  width: 100%;
-  height: 100%;
-  background-color: #f25c54;
-  z-index: -1;
-  position:relative;
+.home {
+  .hero {
+    width: 100%;
+    height: 100%;
+    background-color: #f25c54;
+    z-index: -1;
+    position: relative;
 
-  .heroimg {
-    img {
-      width: 100%;
-      // height: 100%;
-      opacity: 30%;
-    }
-  }
-
-  .centerpage {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-
-    .bigcircle {
-      border-radius: 200px;
-      background-color: #ffd972;
-      width: 358px;
-      height: 358px;
-      position: absolute;
-      top: 75%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      
-            .textbox {
-                width: 162px;
-                height: 162px;
-                    h2 {
-                    font-family: "Caveat";
-                    font-size: 24pt;
-                    }
-                    p {
-                    font-family: "Lato";
-                    font-size: 13pt;
-                    letter-spacing: 1pt;
-                    }
-            }
+    .heroimg {
+      img {
+        width: 100%;
+        // height: 100%;
+        opacity: 30%;
+      }
     }
 
-    .smallcircle {
-      border-radius: 200px;
-      background-color: #fcbcb8;
-      width: 168px;
-      height: 168px;
-      position: absolute;
-      top: 25%;
-      left: 50%;
-      transform: translate(50%, 75%);
+    .centerpage {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
 
-      .textbox {
-        width: 162px;
-        height: 162px;
-        p {
-          font-family: "Lato";
-          font-style: italic;
-          font-size: 10pt;
-          letter-spacing: 1pt;
+      .bigcircle {
+        border-radius: 200px;
+        background-color: #ffd972;
+        width: 358px;
+        height: 358px;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .textbox {
+          width: 162px;
+          height: 162px;
+          h2 {
+            font-family: "Caveat";
+            font-size: 24pt;
+          }
+          p {
+            font-family: "Lato";
+            font-size: 13pt;
+            letter-spacing: 1pt;
+          }
+        }
+      }
+
+      .smallcircle {
+        border-radius: 200px;
+        background-color: #fcbcb8;
+        width: 168px;
+        height: 168px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(50%, 75%);
+
+        .textbox {
+          width: 162px;
+          height: 162px;
+          p {
+            font-family: "Lato";
+            font-style: italic;
+            font-size: 10pt;
+            letter-spacing: 1pt;
+          }
         }
       }
     }
