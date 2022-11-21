@@ -1,18 +1,449 @@
-/* Error: unmatched "}".
- *    ,
- * 45 | }
- *    | ^
- *    '
- *   scss\nav.scss 45:1    @import
- *   scss\styles.scss 3:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: unmatched "}".\a    \2577 \a 45 \2502  }\d\a    \2502  ^\a    \2575 \a   scss\\nav.scss 45:1    @import\a   scss\\styles.scss 3:9  root stylesheet';
+* {
+  margin: 0;
+  padding: 0;
 }
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2 {
+  margin-bottom: 15px;
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 15px;
+}
+
+nav {
+  width: 100%;
+  height: 120px;
+  background-color: transparent;
+  display: flex;
+  font-family: "Caveat";
+  font-size: 25pt;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav .logo {
+  width: 167px;
+  height: 55px;
+  align-items: left;
+  justify-content: left;
+  margin-left: -70px;
+}
+nav a {
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+nav button {
+  width: 158px;
+  height: 52px;
+  font-family: "Caveat";
+  font-size: 25pt;
+  align-items: center;
+  border-radius: 25px;
+  border-style: none;
+  background-color: #ffd972;
+}
+nav button a {
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+footer .footerWrap {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  font-family: "Lato";
+  font-style: italic;
+  font-size: 15pt;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: transparent;
+}
+footer .footerWrap .c1 {
+  display: flex;
+  align-items: center;
+}
+footer .footerWrap .c1 p {
+  color: black;
+}
+footer .footerWrap .footlinks {
+  justify-content: center;
+  display: flex;
+}
+footer .footerWrap .footlinks a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+footer .footerWrap .socials {
+  justify-content: space-between;
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+footer .footerWrap .socials .fb {
+  margin: 5px;
+}
+footer .footerWrap .socials .ig {
+  margin: 5px;
+}
+
+.home .hero {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f25c54;
+  z-index: -1;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.home .hero .heroimg img {
+  width: 100vw;
+  opacity: 30%;
+}
+.home .centerpage {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.home .centerpage .circleWrapper {
+  position: relative;
+  height: 80vh;
+}
+.home .centerpage .circleWrapper .bigcircle {
+  border-radius: 200px;
+  background-color: #ffd972;
+  width: 358px;
+  height: 358px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home .centerpage .circleWrapper .bigcircle .textbox {
+  width: 162px;
+  height: 162px;
+}
+.home .centerpage .circleWrapper .bigcircle .textbox h2 {
+  font-family: "Caveat";
+  font-size: 24pt;
+}
+.home .centerpage .circleWrapper .bigcircle .textbox p {
+  font-family: "Lato";
+  font-size: 13pt;
+  letter-spacing: 1pt;
+}
+.home .centerpage .circleWrapper .smallcircle {
+  border-radius: 200px;
+  background-color: #fcbcb8;
+  width: 168px;
+  height: 168px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(50%, 75%);
+}
+.home .centerpage .circleWrapper .smallcircle .textbox {
+  width: 162px;
+  height: 162px;
+}
+.home .centerpage .circleWrapper .smallcircle .textbox p {
+  font-family: "Lato";
+  font-style: italic;
+  font-size: 10pt;
+  letter-spacing: 1pt;
+}
+
+.browse .hero {
+  width: 100%;
+  height: 100%;
+  background-color: #a7e8bd;
+  z-index: -1;
+  position: relative;
+}
+.browse .hero .heroimg img {
+  width: 100%;
+  opacity: 30%;
+}
+.browse .content {
+  justify-content: center;
+  align-items: center;
+}
+.browse .content h1 {
+  font-family: "Caveat";
+  font-size: 25pt;
+  font-style: bold;
+}
+.browse .content .row .col {
+  display: flex;
+  margin: 20px;
+  justify-content: space-evenly;
+}
+.browse .content .row .col .pizza {
+  display: flex;
+}
+.browse .content .row .col .pizza img {
+  width: 300px;
+  height: 265px;
+  border-radius: 26px;
+}
+.browse .content .row .col .pizza .card {
+  width: 225px;
+  height: 265px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 26px;
+}
+.browse .content .row .col .pizza .card .cardcontent {
+  padding: 25px;
+  justify-content: space-evenly;
+}
+.browse .content .row .col .pizza .card .cardcontent h1 {
+  font-family: "Lato Black";
+  font-size: 15pt;
+  text-align: center;
+  text-decoration: underline;
+}
+.browse .content .row .col .pizza .card .cardcontent p {
+  font-family: "Lato";
+  font-size: 9pt;
+}
+.browse .content .row .col .pizza .card .cardcontent .time, .browse .content .row .col .pizza .card .cardcontent .yield {
+  width: 24px;
+  height: 24px;
+}
+.browse .content .row .col .burger {
+  display: flex;
+}
+.browse .content .row .col .burger img {
+  width: 300px;
+  height: 265px;
+  border-radius: 26px;
+}
+.browse .content .row .col .burger .card {
+  width: 225px;
+  height: 265px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 26px;
+}
+.browse .content .row .col .burger .card .cardcontent {
+  padding: 25px;
+  justify-content: space-evenly;
+}
+.browse .content .row .col .burger .card .cardcontent h1 {
+  font-family: "Lato Black";
+  font-size: 15pt;
+  text-align: center;
+  text-decoration: underline;
+}
+.browse .content .row .col .burger .card .cardcontent p {
+  font-family: "Lato";
+  font-size: 9pt;
+}
+.browse .content .row .col .burger .card .cardcontent .time, .browse .content .row .col .burger .card .cardcontent .yield {
+  width: 24px;
+  height: 24px;
+}
+.browse .content .row .col .biryani {
+  display: flex;
+}
+.browse .content .row .col .biryani img {
+  width: 300px;
+  height: 265px;
+  border-radius: 26px;
+}
+.browse .content .row .col .biryani .card {
+  width: 225px;
+  height: 265px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 26px;
+}
+.browse .content .row .col .biryani .card .cardcontent {
+  padding: 25px;
+  justify-content: space-evenly;
+}
+.browse .content .row .col .biryani .card .cardcontent h1 {
+  font-family: "Lato Black";
+  font-size: 15pt;
+  text-align: center;
+  text-decoration: underline;
+}
+.browse .content .row .col .biryani .card .cardcontent p {
+  font-family: "Lato";
+  font-size: 9pt;
+}
+.browse .content .row .col .biryani .card .cardcontent .time, .browse .content .row .col .biryani .card .cardcontent .yield {
+  width: 24px;
+  height: 24px;
+}
+.browse .content .row .col .chowmein {
+  display: flex;
+}
+.browse .content .row .col .chowmein img {
+  width: 300px;
+  height: 265px;
+  border-radius: 26px;
+}
+.browse .content .row .col .chowmein .card {
+  width: 225px;
+  height: 265px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 26px;
+}
+.browse .content .row .col .chowmein .card .cardcontent {
+  padding: 25px;
+  justify-content: space-evenly;
+}
+.browse .content .row .col .chowmein .card .cardcontent h1 {
+  font-family: "Lato Black";
+  font-size: 15pt;
+  text-align: center;
+  text-decoration: underline;
+}
+.browse .content .row .col .chowmein .card .cardcontent p {
+  font-family: "Lato";
+  font-size: 9pt;
+}
+.browse .content .row .col .chowmein .card .cardcontent .time, .browse .content .row .col .chowmein .card .cardcontent .yield {
+  width: 24px;
+  height: 24px;
+}
+
+.login {
+  background-color: #FFD972;
+  height: 100vh;
+}
+.login .row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.login .row .loginhere {
+  margin: 250px;
+  width: 50%;
+  display: grid;
+  justify-content: left;
+  align-items: center;
+}
+.login .row .loginhere h1 {
+  font-family: "Lato Black";
+  font-size: 30pt;
+}
+.login .row .loginhere .formbox {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+}
+.login .row .loginhere .submit {
+  width: 200px;
+  height: 50px;
+  font-family: "Caveat";
+  font-size: 25pt;
+  background-color: #FFD972;
+  border-style: solid;
+  border-color: black;
+  border-radius: 26px;
+}
+.login .row .signup {
+  width: 50%;
+  margin: 200px;
+  display: grid;
+  justify-content: right;
+  align-items: center;
+}
+.login .row .signup p {
+  font-family: "Lato";
+  font-size: 12pt;
+  font-style: italic;
+}
+.login .row .signup h1 {
+  font-family: "Lato Black";
+  font-size: 30pt;
+}
+.login .row .signup .formbox {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+}
+.login .row .signup .submit {
+  width: 250px;
+  height: 50px;
+  font-family: "Caveat";
+  font-size: 25pt;
+  background-color: #FFD972;
+  border-style: solid;
+  border-color: black;
+  border-radius: 26px;
+}
+
+.formHolder {
+  max-width: 500px;
+  margin: 0;
+  /* justify-content: center;
+  align-items: center;
+  display: flex; */
+  margin-top: 40px;
+  position: relative;
+}
+.formHolder .steps, .formHolder .ingred {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.formHolder .ingred input, .formHolder .steps input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.formHolder .ingred .addBtn,
+.formHolder .steps .addSBtn {
+  width: 50px;
+  height: 50px;
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.formHolder .ingred .addBtn p,
+.formHolder .steps .addSBtn p {
+  margin: 5px;
+  user-select: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
