@@ -9,11 +9,12 @@ export function changePage(pageID, subPageID, callback) {
         });
         } else if (subPageID != undefined) {
             $.get(`pages/subpages/${subPageID}.html`, function (data) {
-              // console.log("data " + data);
+              console.log("data " + data);
                 $("#app").html(data);
-            });
-        // } else { $.get(`pages/${pageID}/${pageID}.html`, function (data) {
-            // $("#app").html(data);
-        // });
+            }); 
+        } else { $.get(`pages/${pageID}.html`, function (data) {
+            console.log("data " + data);
+                $("#app").html(data);
+        });
         }
     }
