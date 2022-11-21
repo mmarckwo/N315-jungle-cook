@@ -120,11 +120,11 @@ footer .footerWrap .socials .ig {
   justify-content: center;
   align-items: center;
 }
-.home .centerpage .wrapTest {
+.home .centerpage .circleWrapper {
   position: relative;
   height: 80vh;
 }
-.home .centerpage .wrapTest .bigcircle {
+.home .centerpage .circleWrapper .bigcircle {
   border-radius: 200px;
   background-color: #ffd972;
   width: 358px;
@@ -134,20 +134,20 @@ footer .footerWrap .socials .ig {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.home .centerpage .wrapTest .bigcircle .textbox {
+.home .centerpage .circleWrapper .bigcircle .textbox {
   width: 162px;
   height: 162px;
 }
-.home .centerpage .wrapTest .bigcircle .textbox h2 {
+.home .centerpage .circleWrapper .bigcircle .textbox h2 {
   font-family: "Caveat";
   font-size: 24pt;
 }
-.home .centerpage .wrapTest .bigcircle .textbox p {
+.home .centerpage .circleWrapper .bigcircle .textbox p {
   font-family: "Lato";
   font-size: 13pt;
   letter-spacing: 1pt;
 }
-.home .centerpage .wrapTest .smallcircle {
+.home .centerpage .circleWrapper .smallcircle {
   border-radius: 200px;
   background-color: #fcbcb8;
   width: 168px;
@@ -157,11 +157,11 @@ footer .footerWrap .socials .ig {
   left: 50%;
   transform: translate(50%, 75%);
 }
-.home .centerpage .wrapTest .smallcircle .textbox {
+.home .centerpage .circleWrapper .smallcircle .textbox {
   width: 162px;
   height: 162px;
 }
-.home .centerpage .wrapTest .smallcircle .textbox p {
+.home .centerpage .circleWrapper .smallcircle .textbox p {
   font-family: "Lato";
   font-style: italic;
   font-size: 10pt;
