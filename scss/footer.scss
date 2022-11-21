@@ -1,50 +1,47 @@
 footer {
+  .footerWrap {
     width: 100%;
     height: 60px;
     display: flex;
-    font-family: 'Lato';
+    font-family: "Lato";
     font-style: italic;
     font-size: 15pt;
     justify-content: space-evenly;
     align-items: center;
-    // position:absolute;
-    background-color:transparent;
-
-
-
+    // position: absolute;
+    // bottom: 0;
+    background-color: transparent;
 
     .c1 {
-        display: flex;
-        align-items: center;
-        p {
-            color: black;
-        }
+      display: flex;
+      align-items: center;
+      p {
+        color: black;
+      }
     }
-
 
     .footlinks {
-        justify-content:center;
-        display: flex;
-        a {
-            margin:10px ;
-            text-decoration: none;
-            color: black;
-    
-        }
+      justify-content: center;
+      display: flex;
+      a {
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+      }
     }
 
+    .socials {
+      justify-content: space-between;
+      width: 30px;
+      height: 30px;
+      display: flex;
 
-    .socials{
-        justify-content: space-between;
-        width: 30px;
-        height: 30px;
-        display: flex;
-
-        .fb {
-            margin: 5px;
-        }
-        .ig {
-            margin: 5px;
-        }
+      .fb {
+        margin: 5px;
+      }
+      .ig {
+        margin: 5px;
+      }
     }
+  }
 }
