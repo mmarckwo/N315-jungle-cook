@@ -12,23 +12,16 @@
     margin-bottom: 50px;
     }
 
-    
-  }
-  
-  
-  .formHolder .ingred input, .formHolder .steps input {
+    input {
     display: block;
     width: 100%;
     height: 50px;
     margin-bottom: 10px;
     border: none;
     border-bottom: 2px solid black;
-  
-  
-  }
-  
-  .formHolder .ingred .addBtn,
-  .formHolder .steps .addSBtn {
+    }
+
+    .addbtn {
     width: 50px;
     height: 50px;
     background-color: crimson;
@@ -42,10 +35,13 @@
     position:absolute;
     right: 5px;
     bottom: 5px;
-  }
-  
-  .formHolder .ingred .addBtn p,
-  .formHolder .steps .addSBtn p{
+
+    p {
     margin: 5px;
     user-select: none;
+    }
+    }
+
+    
   }
+  
