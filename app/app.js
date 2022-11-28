@@ -44,11 +44,13 @@ function loginListeners() {
   $("#createSubmit").on("click", (e) => {
     e.preventDefault();
 
+    // get values in create account section input fields.
     let firstName = $("#createFn").val();
     let lastName = $("#createLn").val();
     let email = $("#createEm").val();
     let password = $("#createPw").val();
 
+    // put input field values into json.
     let userCreateData = {
       firstName: firstName,
       lastName: lastName,
@@ -56,19 +58,23 @@ function loginListeners() {
       password: password,
     };
 
+    // set created json as user account data.
     MODEL.setUserInfo(userCreateData);
   });
 }
 
 function createRecipeListeners() {
+  // default number of fields for both is 3.
   var stepCount = 3;
   var ingredientCount = 3;
 
   $("#addStep").on("click", (e) => {
     e.preventDefault();
 
+    // increase the number of steps by 1.
     stepCount++;
 
+    // add another input field to the steps section.
     $(".steps").append(
       `<input type="text" id="step${
         stepCount - 1
@@ -79,8 +85,10 @@ function createRecipeListeners() {
   $("#addIngredient").on("click", (e) => {
     e.preventDefault();
 
+    // increase the number of ingredients by 1.
     ingredientCount++;
 
+    // add another input field to the ingredients section.
     $(".ingred").append(
       `<input type="text" id="ingred${
         ingredientCount - 1
@@ -90,6 +98,8 @@ function createRecipeListeners() {
 
   $("#submitBtn").on("click", (e) => {
     e.preventDefault();
+
+    // add to recipe json when done.
 
     for (let i = 0; i < stepCount; i++) {
       let test = $(`#step${i}`).val();
