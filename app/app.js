@@ -113,13 +113,12 @@ function createRecipeListeners() {
   });
 }
 
-function initApp() {
-  $(window).on("hashchange", route);
-  route();
-}
+// function initApp() {
+//   $(window).on("hashchange", route);
+//   route();
+// }
 
 $(document).ready(function () {
-  // initLinkListener and initApp are duplicate functions. change or delete one later.
-  //initLinkListener();
+  initLinkListener();
   initApp();
 });
