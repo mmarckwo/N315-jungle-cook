@@ -22,10 +22,33 @@ function route() {
       MODEL.changePage(pageID, subPageID);
     } else if (pageID == "createrecipe") {
       MODEL.changePage(pageID, subPageID, createRecipeListeners);
+    } else if (pageID == "login") {
+      MODEL.changePage(pageID, subPageID, loginListeners);
     } else {
       MODEL.changePage(pageID, subPageID);
     }
   }
+}
+
+function loginListeners() {
+  $("#loginSubmit").on("click", (e) => {
+    e.preventDefault();
+
+    let email = $("#loginEm").val();
+    let password = $("#loginPw").val();
+    console.log(email, password);
+  });
+
+  $("#createSubmit").on("click", (e) => {
+    e.preventDefault();
+
+    let firstName = $("#createFn").val();
+    let lastName = $("#createLn").val();
+    let email = $("#createEm").val();
+    let password = $("#createPw").val();
+
+    console.log(firstName, lastName, email, password);
+  });
 }
 
 function createRecipeListeners() {
