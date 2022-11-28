@@ -37,6 +37,8 @@ function loginListeners() {
     let email = $("#loginEm").val();
     let password = $("#loginPw").val();
     console.log(email, password);
+
+    console.log(MODEL.getUserInfo());
   });
 
   $("#createSubmit").on("click", (e) => {
@@ -47,7 +49,14 @@ function loginListeners() {
     let email = $("#createEm").val();
     let password = $("#createPw").val();
 
-    console.log(firstName, lastName, email, password);
+    let userCreateData = {
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      password: password,
+    };
+
+    MODEL.setUserInfo(userCreateData);
   });
 }
 
@@ -100,7 +109,7 @@ function initApp() {
 }
 
 $(document).ready(function () {
-  // initLinkListener and initApp are duplicate functions. change later.
+  // initLinkListener and initApp are duplicate functions. change or delete one later.
   //initLinkListener();
   initApp();
 });

@@ -1,3 +1,5 @@
+var userInfo = {};
+
 export function changePage(pageID, subPageID, callback) {
   if (pageID == "" || pageID == "home") {
     $.get(`pages/home.html`, function (data) {
@@ -21,4 +23,13 @@ export function changePage(pageID, subPageID, callback) {
       }
     });
   }
+}
+
+export function setUserInfo(userData) {
+  userInfo = userData;
+  console.log(userInfo);
+}
+
+export function getUserInfo() {
+  return userInfo;
 }
