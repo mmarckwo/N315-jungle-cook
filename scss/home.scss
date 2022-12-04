@@ -16,15 +16,15 @@
     }
   }
 
-  .centerpage {
+  // .centerpage {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
 
-    .circleWrapper {
-      position: relative;
-      height: 80vh;
+    // .circleWrapper {
+    //   position: relative;
+    //   height: 80vh;
 
       .bigcircle {
         border-radius: 200px;
@@ -32,19 +32,25 @@
         width: 358px;
         height: 358px;
         position: absolute;
-        top: 75%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items:center;
+        justify-content: center;
+
 
         .textbox {
-          width: 162px;
-          height: 162px;
-          h2 {
-            font-family: "Caveat";
+          // width: 362px;
+          // height: 362px;
+          padding: 33px;
+          h1 {
+            font-family: 'Caveat Bold';
             font-size: 24pt;
           }
           p {
-            font-family: "Lato";
+            font-family: 'Lato';
             font-size: 13pt;
             letter-spacing: 1pt;
           }
@@ -54,24 +60,33 @@
       .smallcircle {
         border-radius: 200px;
         background-color: #fcbcb8;
-        width: 168px;
-        height: 168px;
+        max-width: 168px;
+        max-height: 168px;
         position: absolute;
-        top: 25%;
+        top: 0%;
         left: 50%;
         transform: translate(50%, 75%);
+        z-index: -1;
+        box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items:center;
+        justify-content: center;
 
         .textbox {
-          width: 162px;
-          height: 162px;
+          // width: 162px;
+          // height: 162px;
+          padding-top: 66px;
+          padding-bottom: 66px;
+          padding-right: 33px;
+          padding-left: 36px;
+          
           p {
-            font-family: "Lato";
-            font-style: italic;
-            font-size: 10pt;
+            font-family: 'Lato Italic';
+            font-size: 8pt;
             letter-spacing: 1pt;
           }
         }
       }
-    }
-  }
+    // }
+  // }
 }

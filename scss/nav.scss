@@ -14,15 +14,27 @@ nav {
     height: 55px;
     align-items: left;
     justify-content: left;
-    margin-left: -70px;
+    margin-left: 0px;
+    margin-right: 400px;  
   }
 
-  a {
+  li, a {
     justify-content: space-evenly;
     align-items: center;
     text-decoration: none;
     color: black;
+    list-style-type: none;
+    font-size: 20pt;
+
+
   }
+
+    li a:is(:link, :active, :visited).active {
+      color: black;
+      text-decoration: underline solid #000 3px;
+      text-underline-offset: 10px;
+    }
+
 
   button {
     width: 158px;
@@ -33,12 +45,15 @@ nav {
     border-radius: 25px;
     border-style: none;
     background-color: #ffd972;
+    box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+
 
     a {
       justify-content: space-evenly;
       align-items: center;
       text-decoration: none;
       color: black;
+      font-size: 20pt;
     }
   }
 }

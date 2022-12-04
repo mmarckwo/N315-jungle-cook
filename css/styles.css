@@ -96,13 +96,21 @@ nav .logo {
   height: 55px;
   align-items: left;
   justify-content: left;
-  margin-left: -70px;
+  margin-left: 0px;
+  margin-right: 400px;
 }
-nav a {
+nav li, nav a {
   justify-content: space-evenly;
   align-items: center;
   text-decoration: none;
   color: black;
+  list-style-type: none;
+  font-size: 20pt;
+}
+nav li a:is(:link, :active, :visited).active {
+  color: black;
+  text-decoration: underline solid #000 3px;
+  text-underline-offset: 10px;
 }
 nav button {
   width: 158px;
@@ -113,30 +121,33 @@ nav button {
   border-radius: 25px;
   border-style: none;
   background-color: #ffd972;
+  box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
 }
 nav button a {
   justify-content: space-evenly;
   align-items: center;
   text-decoration: none;
   color: black;
+  font-size: 20pt;
 }
 
 footer .footerWrap {
-  width: 100%;
-  height: 60px;
+  max-width: 100%;
+  max-height: 60px;
   display: flex;
-  font-family: "Lato";
-  font-style: italic;
+  font-family: "Lato Italic";
   font-size: 15pt;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 0;
   background-color: transparent;
+  position: fixed;
+  margin: 35px;
 }
 footer .footerWrap .c1 {
   display: flex;
   align-items: center;
-}
-footer .footerWrap .c1 p {
   color: black;
 }
 footer .footerWrap .footlinks {
@@ -161,6 +172,12 @@ footer .footerWrap .socials .ig {
   margin: 5px;
 }
 
+.home {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 .home .hero {
   width: 100vw;
   height: 100vh;
@@ -174,57 +191,56 @@ footer .footerWrap .socials .ig {
   width: 100vw;
   opacity: 30%;
 }
-.home .centerpage {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-.home .centerpage .circleWrapper {
-  position: relative;
-  height: 80vh;
-}
-.home .centerpage .circleWrapper .bigcircle {
+.home .bigcircle {
   border-radius: 200px;
   background-color: #ffd972;
   width: 358px;
   height: 358px;
   position: absolute;
-  top: 75%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.home .centerpage .circleWrapper .bigcircle .textbox {
-  width: 162px;
-  height: 162px;
+.home .bigcircle .textbox {
+  padding: 33px;
 }
-.home .centerpage .circleWrapper .bigcircle .textbox h2 {
-  font-family: "Caveat";
+.home .bigcircle .textbox h1 {
+  font-family: "Caveat Bold";
   font-size: 24pt;
 }
-.home .centerpage .circleWrapper .bigcircle .textbox p {
+.home .bigcircle .textbox p {
   font-family: "Lato";
   font-size: 13pt;
   letter-spacing: 1pt;
 }
-.home .centerpage .circleWrapper .smallcircle {
+.home .smallcircle {
   border-radius: 200px;
   background-color: #fcbcb8;
-  width: 168px;
-  height: 168px;
+  max-width: 168px;
+  max-height: 168px;
   position: absolute;
-  top: 25%;
+  top: 0%;
   left: 50%;
   transform: translate(50%, 75%);
+  z-index: -1;
+  box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.home .centerpage .circleWrapper .smallcircle .textbox {
-  width: 162px;
-  height: 162px;
+.home .smallcircle .textbox {
+  padding-top: 66px;
+  padding-bottom: 66px;
+  padding-right: 33px;
+  padding-left: 36px;
 }
-.home .centerpage .circleWrapper .smallcircle .textbox p {
-  font-family: "Lato";
-  font-style: italic;
-  font-size: 10pt;
+.home .smallcircle .textbox p {
+  font-family: "Lato Italic";
+  font-size: 8pt;
   letter-spacing: 1pt;
 }
 
