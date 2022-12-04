@@ -22,11 +22,13 @@
     // position: absolute;
     justify-content: center;
     align-items: center;
+    margin: 75px;
+
 
         h1 {
-          font-family: 'Caveat';
+          font-family: 'Caveat Bold';
           font-size: 25pt;
-          font-style: bold;
+          // margin-left: 125px;
         }
 
         .row {
@@ -38,11 +40,15 @@
             .pizza {
 
               display: flex;
-              img {
+              .pizzaimage {
                 width: 300px;
                 height: 265px;
-                // background-repeat: repeat;
+                background-image: url(../img/recipe-pizza.jpg);
+                background-size:cover;
+                background-position:center;
+                background-repeat: repeat;
                 border-radius: 26px;
+                overflow: hidden;
               }
 
               .card {
@@ -64,31 +70,61 @@
                 }
                 p {
                   font-family: 'Lato';
-                  font-size: 9pt;
+                  font-size: 8pt;
+                  letter-spacing: .5pt;
                   
                 }
 
-                .time, .yield {
-                  width: 24px;
-                  height: 24px;
+                .info {
+                  
+                  .info1{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding:10px;
+                    
+                    .time {
+                      width: 23px;
+                      height: 23px;
+                    }
+                    p {
+                      text-align: center;
+                    }
+                  }
 
+                  .info2 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding:15px;
+
+                    .yield {
+                      width: 23px;
+                      height: 23px;
+                    }
+                    p {
+                      text-align: center;
+                    }
+
+                  }
+
+                  }
                 }
-
-                
-
-                }
-
               }
             }
 
             .burger {
 
               display: flex;
-              img {
+              .burgerimage {
                 width: 300px;
                 height: 265px;
-                // background-repeat: repeat;
+                background-image: url(../img/recipe-burger.jpg);
+                background-size:cover;
+                background-position:center;
+                background-repeat: repeat;
                 border-radius: 26px;
+                overflow: hidden;
               }
 
               .card {
@@ -110,14 +146,17 @@
                 }
                 p {
                   font-family: 'Lato';
-                  font-size: 9pt;
+                  font-size: 8pt;
+                  letter-spacing: .5pt;
                   
                 }
 
                 .time, .yield {
-                  width: 24px;
-                  height: 24px;
-
+                  width: 23px;
+                  height: 23px;
+                  justify-content:center;
+                  align-items: center;
+                  display: flex;
                 }
 
                 
@@ -128,7 +167,16 @@
             }
 
             .biryani {
-
+              .byraniimage {
+                width: 300px;
+                height: 265px;
+                background-image: url(../img/recipe-pilaf.jpg);
+                background-size:cover;
+                background-position:center;
+                background-repeat: repeat;
+                border-radius: 26px;
+                overflow: hidden;
+              }
               display: flex;
               img {
                 width: 300px;
@@ -156,14 +204,16 @@
                 }
                 p {
                   font-family: 'Lato';
-                  font-size: 9pt;
-                  
+                  font-size: 8pt;
+                  letter-spacing: .5pt;
                 }
 
                 .time, .yield {
-                  width: 24px;
-                  height: 24px;
-
+                  width: 23px;
+                  height: 23px;
+                  justify-content:center;
+                  align-items: center;
+                  display: flex;
                 }
 
                 
@@ -176,11 +226,15 @@
             .chowmein {
 
               display: flex;
-              img {
+              .meinimage {
                 width: 300px;
                 height: 265px;
-                // background-repeat: repeat;
+                background-image: url(../img/recipe-chowmein.jpg);
+                background-size:cover;
+                background-position:center;
+                background-repeat: repeat;
                 border-radius: 26px;
+                overflow: hidden;
               }
 
               .card {
@@ -202,14 +256,16 @@
                 }
                 p {
                   font-family: 'Lato';
-                  font-size: 9pt;
-                  
+                  font-size: 8pt;
+                  letter-spacing: .5pt;
                 }
 
                 .time, .yield {
-                  width: 24px;
-                  height: 24px;
-
+                  width: 23px;
+                  height: 23px;
+                  justify-content:center;
+                  align-items: center;
+                  display: flex;
                 }
 
                 

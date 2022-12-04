@@ -263,11 +263,11 @@ footer .footerWrap .socials .ig {
 .browse .content {
   justify-content: center;
   align-items: center;
+  margin: 75px;
 }
 .browse .content h1 {
-  font-family: "Caveat";
+  font-family: "Caveat Bold";
   font-size: 25pt;
-  font-style: bold;
 }
 .browse .content .row .col {
   display: flex;
@@ -277,10 +277,15 @@ footer .footerWrap .socials .ig {
 .browse .content .row .col .pizza {
   display: flex;
 }
-.browse .content .row .col .pizza img {
+.browse .content .row .col .pizza .pizzaimage {
   width: 300px;
   height: 265px;
+  background-image: url(../img/recipe-pizza.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
   border-radius: 26px;
+  overflow: hidden;
 }
 .browse .content .row .col .pizza .card {
   width: 225px;
@@ -301,19 +306,47 @@ footer .footerWrap .socials .ig {
 }
 .browse .content .row .col .pizza .card .cardcontent p {
   font-family: "Lato";
-  font-size: 9pt;
+  font-size: 8pt;
+  letter-spacing: 0.5pt;
 }
-.browse .content .row .col .pizza .card .cardcontent .time, .browse .content .row .col .pizza .card .cardcontent .yield {
-  width: 24px;
-  height: 24px;
+.browse .content .row .col .pizza .card .cardcontent .info .info1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+.browse .content .row .col .pizza .card .cardcontent .info .info1 .time {
+  width: 23px;
+  height: 23px;
+}
+.browse .content .row .col .pizza .card .cardcontent .info .info1 p {
+  text-align: center;
+}
+.browse .content .row .col .pizza .card .cardcontent .info .info2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+}
+.browse .content .row .col .pizza .card .cardcontent .info .info2 .yield {
+  width: 23px;
+  height: 23px;
+}
+.browse .content .row .col .pizza .card .cardcontent .info .info2 p {
+  text-align: center;
 }
 .browse .content .row .col .burger {
   display: flex;
 }
-.browse .content .row .col .burger img {
+.browse .content .row .col .burger .burgerimage {
   width: 300px;
   height: 265px;
+  background-image: url(../img/recipe-burger.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
   border-radius: 26px;
+  overflow: hidden;
 }
 .browse .content .row .col .burger .card {
   width: 225px;
@@ -334,14 +367,28 @@ footer .footerWrap .socials .ig {
 }
 .browse .content .row .col .burger .card .cardcontent p {
   font-family: "Lato";
-  font-size: 9pt;
+  font-size: 8pt;
+  letter-spacing: 0.5pt;
 }
 .browse .content .row .col .burger .card .cardcontent .time, .browse .content .row .col .burger .card .cardcontent .yield {
-  width: 24px;
-  height: 24px;
+  width: 23px;
+  height: 23px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .browse .content .row .col .biryani {
   display: flex;
+}
+.browse .content .row .col .biryani .byraniimage {
+  width: 300px;
+  height: 265px;
+  background-image: url(../img/recipe-pilaf.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  border-radius: 26px;
+  overflow: hidden;
 }
 .browse .content .row .col .biryani img {
   width: 300px;
@@ -367,19 +414,28 @@ footer .footerWrap .socials .ig {
 }
 .browse .content .row .col .biryani .card .cardcontent p {
   font-family: "Lato";
-  font-size: 9pt;
+  font-size: 8pt;
+  letter-spacing: 0.5pt;
 }
 .browse .content .row .col .biryani .card .cardcontent .time, .browse .content .row .col .biryani .card .cardcontent .yield {
-  width: 24px;
-  height: 24px;
+  width: 23px;
+  height: 23px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .browse .content .row .col .chowmein {
   display: flex;
 }
-.browse .content .row .col .chowmein img {
+.browse .content .row .col .chowmein .meinimage {
   width: 300px;
   height: 265px;
+  background-image: url(../img/recipe-chowmein.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
   border-radius: 26px;
+  overflow: hidden;
 }
 .browse .content .row .col .chowmein .card {
   width: 225px;
@@ -400,11 +456,15 @@ footer .footerWrap .socials .ig {
 }
 .browse .content .row .col .chowmein .card .cardcontent p {
   font-family: "Lato";
-  font-size: 9pt;
+  font-size: 8pt;
+  letter-spacing: 0.5pt;
 }
 .browse .content .row .col .chowmein .card .cardcontent .time, .browse .content .row .col .chowmein .card .cardcontent .yield {
-  width: 24px;
-  height: 24px;
+  width: 23px;
+  height: 23px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .login {
