@@ -1,13 +1,18 @@
+<section class="create">
 <div class="formHolder">
-  <div class="steps">
     <h1 id="welcomeHeader">Hey ${nameID}, create your recipe!</h1>
-    <input type="file" id="step0" placeholder="Add Recipe Image" />
-    <input type="text" id="step1" placeholder="Step #2" />
-    <input type="text" id="step2" placeholder="Step #3" />
+<div class="steps">
+    
+    <input type="file" id="step0" value="Add Recipe Image"/>
+    <input type="text" id="step1" placeholder="Recipe Name" />
+    <input type="text" id="step2" placeholder="Recipe Description" />
+    <input type="text" id="step3" placeholder="Recipe Total Time" />
+    <input type="text" id="step4" placeholder="Recipe Serving Size" />
     <div class="addbtn" id="addStep"><p>+</p></div>
-  </div>
+  </div> <br><br>
 
   <div class="ingred">
+    <h3>Enter Ingredients:</h3>
     <input type="text" id="ingred0" placeholder="Ingredient #1" />
     <input type="text" id="ingred1" placeholder="Ingredient #2" />
     <input type="text" id="ingred2" placeholder="Ingredient #3" />
@@ -15,6 +20,8 @@
   </div>
 
   <div>
-    <input type="submit" value="ADD RECIPE" id="submitBtn" />
+    <input type="submit" value="Create Recipe" id="submitBtn"/>
   </div>
 </div>
+</section>
+
