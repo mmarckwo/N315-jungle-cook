@@ -265,9 +265,11 @@ footer .footerWrap .socials .ig {
   align-items: center;
   margin: 75px;
 }
-.browse .content h1 {
+.browse .content .title {
   font-family: "Caveat Bold";
   font-size: 25pt;
+  margin-left: 115px;
+  margin-bottom: 50px;
 }
 .browse .content .row .col {
   display: flex;
@@ -370,12 +372,31 @@ footer .footerWrap .socials .ig {
   font-size: 8pt;
   letter-spacing: 0.5pt;
 }
-.browse .content .row .col .burger .card .cardcontent .time, .browse .content .row .col .burger .card .cardcontent .yield {
+.browse .content .row .col .burger .card .cardcontent .info .info1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+.browse .content .row .col .burger .card .cardcontent .info .info1 .time {
   width: 23px;
   height: 23px;
-  justify-content: center;
-  align-items: center;
+}
+.browse .content .row .col .burger .card .cardcontent .info .info1 p {
+  text-align: center;
+}
+.browse .content .row .col .burger .card .cardcontent .info .info2 {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+}
+.browse .content .row .col .burger .card .cardcontent .info .info2 .yield {
+  width: 23px;
+  height: 23px;
+}
+.browse .content .row .col .burger .card .cardcontent .info .info2 p {
+  text-align: center;
 }
 .browse .content .row .col .biryani {
   display: flex;
@@ -417,12 +438,31 @@ footer .footerWrap .socials .ig {
   font-size: 8pt;
   letter-spacing: 0.5pt;
 }
-.browse .content .row .col .biryani .card .cardcontent .time, .browse .content .row .col .biryani .card .cardcontent .yield {
+.browse .content .row .col .biryani .card .cardcontent .info .info1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+.browse .content .row .col .biryani .card .cardcontent .info .info1 .time {
   width: 23px;
   height: 23px;
-  justify-content: center;
-  align-items: center;
+}
+.browse .content .row .col .biryani .card .cardcontent .info .info1 p {
+  text-align: center;
+}
+.browse .content .row .col .biryani .card .cardcontent .info .info2 {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+}
+.browse .content .row .col .biryani .card .cardcontent .info .info2 .yield {
+  width: 23px;
+  height: 23px;
+}
+.browse .content .row .col .biryani .card .cardcontent .info .info2 p {
+  text-align: center;
 }
 .browse .content .row .col .chowmein {
   display: flex;
@@ -459,12 +499,31 @@ footer .footerWrap .socials .ig {
   font-size: 8pt;
   letter-spacing: 0.5pt;
 }
-.browse .content .row .col .chowmein .card .cardcontent .time, .browse .content .row .col .chowmein .card .cardcontent .yield {
+.browse .content .row .col .chowmein .card .cardcontent .info .info1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+.browse .content .row .col .chowmein .card .cardcontent .info .info1 .time {
   width: 23px;
   height: 23px;
-  justify-content: center;
-  align-items: center;
+}
+.browse .content .row .col .chowmein .card .cardcontent .info .info1 p {
+  text-align: center;
+}
+.browse .content .row .col .chowmein .card .cardcontent .info .info2 {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+}
+.browse .content .row .col .chowmein .card .cardcontent .info .info2 .yield {
+  width: 23px;
+  height: 23px;
+}
+.browse .content .row .col .chowmein .card .cardcontent .info .info2 p {
+  text-align: center;
 }
 
 .login {

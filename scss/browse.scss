@@ -25,10 +25,11 @@
     margin: 75px;
 
 
-        h1 {
+        .title {
           font-family: 'Caveat Bold';
           font-size: 25pt;
-          // margin-left: 125px;
+          margin-left: 115px;
+          margin-bottom: 50px;
         }
 
         .row {
@@ -151,13 +152,40 @@
                   
                 }
 
-                .time, .yield {
-                  width: 23px;
-                  height: 23px;
-                  justify-content:center;
-                  align-items: center;
-                  display: flex;
-                }
+                .info {
+                  
+                  .info1{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding:10px;
+                    
+                    .time {
+                      width: 23px;
+                      height: 23px;
+                    }
+                    p {
+                      text-align: center;
+                    }
+                  }
+
+                  .info2 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding:15px;
+
+                    .yield {
+                      width: 23px;
+                      height: 23px;
+                    }
+                    p {
+                      text-align: center;
+                    }
+
+                  }
+
+                  }
 
                 
 
@@ -208,13 +236,40 @@
                   letter-spacing: .5pt;
                 }
 
-                .time, .yield {
-                  width: 23px;
-                  height: 23px;
-                  justify-content:center;
-                  align-items: center;
-                  display: flex;
-                }
+                .info {
+                  
+                  .info1{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding:10px;
+                    
+                    .time {
+                      width: 23px;
+                      height: 23px;
+                    }
+                    p {
+                      text-align: center;
+                    }
+                  }
+
+                  .info2 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding:15px;
+
+                    .yield {
+                      width: 23px;
+                      height: 23px;
+                    }
+                    p {
+                      text-align: center;
+                    }
+
+                  }
+
+                  }
 
                 
 
@@ -260,13 +315,40 @@
                   letter-spacing: .5pt;
                 }
 
-                .time, .yield {
-                  width: 23px;
-                  height: 23px;
-                  justify-content:center;
-                  align-items: center;
-                  display: flex;
-                }
+                .info {
+                  
+                  .info1{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding:10px;
+                    
+                    .time {
+                      width: 23px;
+                      height: 23px;
+                    }
+                    p {
+                      text-align: center;
+                    }
+                  }
+
+                  .info2 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding:15px;
+
+                    .yield {
+                      width: 23px;
+                      height: 23px;
+                    }
+                    p {
+                      text-align: center;
+                    }
+
+                  }
+
+                  }
 
                 
 
