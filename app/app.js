@@ -113,6 +113,57 @@ function createRecipeListeners() {
   });
 }
 
+function editRecipeListeners() {
+  // default number of fields for both is 3.
+  var stepCount = 3;
+  var ingredientCount = 3;
+  var intstructionCount = 3;
+
+  $("#addStep").on("click", (e) => {
+    e.preventDefault();
+
+    // increase the number of steps by 1.
+    stepCount++;
+
+    // add another input field to the steps section.
+    $(".steps").append(
+      `<input type="text" id="step${
+        stepCount - 1
+      }" placeholder="Step #${stepCount}" />`
+    );
+  });
+
+  $("#addIngredient").on("click", (e) => {
+    e.preventDefault();
+
+    // increase the number of ingredients by 1.
+    ingredientCount++;
+
+    // add another input field to the ingredients section.
+    $(".ingred").append(
+      `<input type="text" id="ingred${
+        ingredientCount - 1
+      }" placeholder="Ingredient #${ingredientCount}" />`
+    );
+  });
+
+  $("#submitBtn").on("click", (e) => {
+    e.preventDefault();
+
+    // add to recipe json when done.
+
+    for (let i = 0; i < stepCount; i++) {
+      let test = $(`#step${i}`).val();
+      console.log(test);
+    }
+
+    for (let i = 0; i < ingredientCount; i++) {
+      let test = $(`#ingred${i}`).val();
+      console.log(test);
+    }
+  });
+}
+
 
 const activePage = window.location.pathname
 const navLinks = document.querySelectorAll ('nav li a').forEach(link => {

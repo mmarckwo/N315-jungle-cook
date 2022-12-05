@@ -529,6 +529,226 @@ footer .footerWrap .socials .ig {
   text-align: center;
 }
 
+.pizzarecipe .row .col {
+  display: flex;
+}
+.pizzarecipe .row .col .pza {
+  width: 468px;
+  height: 421px;
+}
+.pizzarecipe .row .col .desc h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.pizzarecipe .row .col .desc p {
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+.pizzarecipe .row .col .ingredient h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.pizzarecipe .row .col .ingredient li {
+  list-style: none;
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+.pizzarecipe .row .col .instructions h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.pizzarecipe .row .col .instructions li {
+  list-style: none;
+}
+.pizzarecipe .row button {
+  width: 128px;
+  height: 42px;
+  background-color: #FFD972;
+  border-style: none;
+  border-radius: 25px;
+}
+.pizzarecipe .row button a {
+  text-decoration: none;
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+
+.burgrecipe .row .col {
+  display: flex;
+}
+.burgrecipe .row .col .pza {
+  width: 468px;
+  height: 421px;
+}
+.burgrecipe .row .col .desc h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.burgrecipe .row .col .desc p {
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+.burgrecipe .row .col .ingredient h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.burgrecipe .row .col .ingredient li {
+  list-style: none;
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+.burgrecipe .row .col .instructions h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.burgrecipe .row .col .instructions li {
+  list-style: none;
+}
+.burgrecipe .row button {
+  width: 128px;
+  height: 42px;
+  background-color: #FFD972;
+  border-style: none;
+  border-radius: 25px;
+}
+.burgrecipe .row button a {
+  text-decoration: none;
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+
+.chickenrecipe .row .col {
+  display: flex;
+}
+.chickenrecipe .row .col .pza {
+  width: 468px;
+  height: 421px;
+}
+.chickenrecipe .row .col .desc h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.chickenrecipe .row .col .desc p {
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+.chickenrecipe .row .col .ingredient h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.chickenrecipe .row .col .ingredient li {
+  list-style: none;
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+.chickenrecipe .row .col .instructions h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.chickenrecipe .row .col .instructions li {
+  list-style: none;
+}
+.chickenrecipe .row button {
+  width: 128px;
+  height: 42px;
+  background-color: #FFD972;
+  border-style: none;
+  border-radius: 25px;
+}
+.chickenrecipe .row button a {
+  text-decoration: none;
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+
+.burgrecipe .row .col {
+  display: flex;
+}
+.burgrecipe .row .col .pza {
+  width: 468px;
+  height: 421px;
+}
+.burgrecipe .row .col .desc h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.burgrecipe .row .col .desc p {
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+.burgrecipe .row .col .ingredient h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.burgrecipe .row .col .ingredient li {
+  list-style: none;
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+.burgrecipe .row .col .instructions h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.burgrecipe .row .col .instructions li {
+  list-style: none;
+}
+.burgrecipe .row button {
+  width: 128px;
+  height: 42px;
+  background-color: #FFD972;
+  border-style: none;
+  border-radius: 25px;
+}
+.burgrecipe .row button a {
+  text-decoration: none;
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+
+.chowrecipe .row .col {
+  display: flex;
+}
+.chowrecipe .row .col .pza {
+  width: 468px;
+  height: 421px;
+}
+.chowrecipe .row .col .desc h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.chowrecipe .row .col .desc p {
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+.chowrecipe .row .col .ingredient h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.chowrecipe .row .col .ingredient li {
+  list-style: none;
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+.chowrecipe .row .col .instructions h2 {
+  font-family: "Lato Black";
+  font-size: 25pt;
+}
+.chowrecipe .row .col .instructions li {
+  list-style: none;
+}
+.chowrecipe .row button {
+  width: 128px;
+  height: 42px;
+  background-color: #FFD972;
+  border-style: none;
+  border-radius: 25px;
+}
+.chowrecipe .row button a {
+  text-decoration: none;
+  font-family: "Caveat";
+  font-size: 20pt;
+}
+
 .login {
   background-color: #FFD972;
   width: 100vw;
@@ -562,6 +782,10 @@ footer .footerWrap .socials .ig {
   border: none;
   border-bottom: 2px solid black;
   background-color: transparent;
+  font-family: "Lato";
+  font-size: 12pt;
+  letter-spacing: 0.5pt;
+  margin-top: 50px;
 }
 .login .row .loginhere .submit {
   width: 200px;
@@ -569,9 +793,10 @@ footer .footerWrap .socials .ig {
   font-family: "Caveat";
   font-size: 25pt;
   background-color: #FFD972;
-  border-style: solid;
-  border-color: black;
+  border-style: none;
   border-radius: 26px;
+  box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+  margin: 50px;
 }
 .login .row .signup {
   width: 50%;
@@ -592,10 +817,14 @@ footer .footerWrap .socials .ig {
 .login .row .signup .formbox {
   width: 100%;
   height: 50%;
+  font-family: "Lato";
+  font-size: 12pt;
+  letter-spacing: 0.5pt;
   margin-bottom: 10px;
   border: none;
   border-bottom: 2px solid black;
   background-color: transparent;
+  margin-top: 50px;
 }
 .login .row .signup .submit {
   width: 250px;
@@ -603,9 +832,10 @@ footer .footerWrap .socials .ig {
   font-family: "Caveat";
   font-size: 25pt;
   background-color: #FFD972;
-  border-style: solid;
-  border-color: black;
+  box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+  border-style: none;
   border-radius: 26px;
+  margin: 50px;
 }
 
 .yourrecipes {
@@ -754,20 +984,125 @@ footer .footerWrap .socials .ig {
   font-family: "Caveat Bold";
   font-size: 25pt;
 }
-.create .formHolder .steps,
+.create .formHolder .steps {
+  position: relative;
+  margin-bottom: 50px;
+  font-family: "Lato";
+}
+.create .formHolder .steps .addimage {
+  display: flex;
+}
+.create .formHolder .steps .addimage .step0 {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.create .formHolder .steps .addimage #step0 {
+  border-radius: 25px;
+  background-color: #EFA7A7;
+  border-style: none;
+}
 .create .formHolder .ingred {
   position: relative;
   margin-bottom: 50px;
   font-family: "Lato";
 }
-.create .formHolder .steps #step0,
-.create .formHolder .ingred #step0 {
+.create .formHolder .ingred h3 {
+  font-size: 20pt;
+}
+.create .formHolder input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.create .formHolder .addbtn {
+  max-width: 38px;
+  max-height: 38px;
+  background-color: #EFA7A7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.create .formHolder .addbtn p {
+  margin: 5px;
+  user-select: none;
+  font-size: 20pt;
+  font-family: "GilSans Light";
+}
+.create .formHolder #submitBtn {
+  background-color: #EFA7A7;
+  color: #000;
+  border-radius: 25px;
+  border-style: none;
+  font-family: "Caveat";
+  font-size: 25pt;
+}
+
+.create {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  max-width: 980px;
+}
+.create .formHolder {
+  max-width: 980px;
+  margin: 0;
+  margin-top: 40px;
+  position: relative;
+}
+.create .formHolder h1 {
+  font-family: "Caveat Bold";
+  font-size: 25pt;
+}
+.create .formHolder .steps {
+  position: relative;
+  margin-bottom: 50px;
+  font-family: "Lato";
+}
+.create .formHolder .steps .addimage {
+  display: flex;
+}
+.create .formHolder .steps .addimage .step0 {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.create .formHolder .steps .addimage #step0 {
   border-radius: 25px;
   background-color: #EFA7A7;
   border-style: none;
 }
-.create .formHolder .steps h3,
+.create .formHolder .ingred {
+  position: relative;
+  margin-bottom: 50px;
+  font-family: "Lato";
+}
 .create .formHolder .ingred h3 {
+  font-size: 20pt;
+}
+.create .formHolder .instructions {
+  position: relative;
+  margin-bottom: 50px;
+  font-family: "Lato";
+}
+.create .formHolder .instructions h3 {
   font-size: 20pt;
 }
 .create .formHolder input {

@@ -2,8 +2,12 @@
 <div class="formHolder">
     <h1 id="welcomeHeader">Hey ${nameID}, create your recipe!</h1>
 <div class="steps">
-    
-    <input type="file" id="step0" value="Add Recipe Image"/>
+  <div class="addimage">
+    <input type="none" class="step0" placeholder="Add Recipe Image">
+    <button id="step0" >
+      <input type="file"value="Add Recipe Image"/>
+    </button>
+  </div>
     <input type="text" id="step1" placeholder="Recipe Name" />
     <input type="text" id="step2" placeholder="Recipe Description" />
     <input type="text" id="step3" placeholder="Recipe Total Time" />

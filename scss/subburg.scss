@@ -1,0 +1,68 @@
+.burgrecipe {
+    .row{
+        .col{
+            display: flex;
+            .pza {
+                width: 468px;
+                height: 421px;
+            }
+
+            .desc {
+                h2 {
+                    font-family: 'Lato Black';
+                    font-size: 25pt;
+                }
+
+                p {
+                    font-family: 'Caveat';
+                    font-size: 20pt;
+                }
+            }
+
+        }
+
+        .col {
+            .ingredient {
+                h2 {
+                font-family: 'Lato Black';
+                font-size: 25pt;
+                }
+
+                li {
+                    list-style: none;
+                    font-family: 'Caveat';
+                    font-size: 20pt;
+                }
+
+            }
+
+        }
+
+        .col {
+            .instructions {
+                h2{
+                    font-family: 'Lato Black';
+                    font-size: 25pt;
+                }
+
+                li {
+                    list-style: none;
+                }
+            }
+        }
+
+        button {
+            width: 128px;
+            height: 42px;
+            background-color: #FFD972;
+            border-style: none;
+            border-radius: 25px;
+
+            a {
+                text-decoration: none;
+                font-family: 'Caveat';
+                font-size: 20pt;
+            }
+        }
+    }
+}
