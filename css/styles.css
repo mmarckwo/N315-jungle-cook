@@ -185,10 +185,6 @@ footer .footerWrap .socials .ig {
   width: 100vw;
   height: 100vh;
   background-color: #f25c54;
-  z-index: -1;
-  position: fixed;
-  bottom: 0;
-  right: 0;
 }
 .home .hero .heroimg img {
   width: 100vw;
@@ -254,10 +250,6 @@ footer .footerWrap .socials .ig {
   width: 100vw;
   height: 100vh;
   background-color: #a7e8bd;
-  z-index: -1;
-  position: fixed;
-  bottom: 0;
-  right: 0;
 }
 .browse .hero .heroimg img {
   width: 100vw;
@@ -753,10 +745,6 @@ footer .footerWrap .socials .ig {
   background-color: #FFD972;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
-  position: fixed;
-  bottom: 0;
-  right: 0;
 }
 .login .row {
   width: 100%;
@@ -845,10 +833,6 @@ footer .footerWrap .socials .ig {
   width: 100vw;
   height: 100vh;
   background-color: #a7e8bd;
-  z-index: -1;
-  position: fixed;
-  bottom: 0;
-  right: 0;
 }
 .yourrecipes .hero .heroimg img {
   width: 100vw;
