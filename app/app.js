@@ -18,12 +18,12 @@ function route() {
   } else {
     if (pageID == subPageID) {
       MODEL.changePage(pageID);
-    } else if (pageID == "home") {
-      MODEL.changePage(pageID, subPageID);
     } else if (pageID == "createrecipe") {
       MODEL.changePage(pageID, subPageID, createRecipeListeners);
     } else if (pageID == "login") {
       MODEL.changePage(pageID, subPageID, loginListeners);
+    } else if (pageID == "home") {
+      MODEL.changePage(pageID, subPageID);
     } else {
       MODEL.changePage(pageID, subPageID);
     }
@@ -117,7 +117,7 @@ function editRecipeListeners() {
   // default number of fields for both is 3.
   var stepCount = 3;
   var ingredientCount = 3;
-  var intstructionCount = 3;
+  var instructionCount = 3;
 
   $("#addStep").on("click", (e) => {
     e.preventDefault();
@@ -154,12 +154,17 @@ function editRecipeListeners() {
 
     for (let i = 0; i < stepCount; i++) {
       let test = $(`#step${i}`).val();
-      console.log(test);
+      // console.log(test);
     }
 
     for (let i = 0; i < ingredientCount; i++) {
       let test = $(`#ingred${i}`).val();
-      console.log(test);
+      // console.log(test);
+    }
+
+    for (let i = 0; i < instructionCount; i++) {
+      let test = $(`#inst${i}`).val();
+      // console.log(test);
     }
   });
 }
@@ -173,4 +178,7 @@ const navLinks = document.querySelectorAll("nav li a").forEach((link) => {
 
 $(document).ready(function () {
   initLinkListener();
+  loginListeners();
+  createRecipeListeners();
+  editRecipeListeners();
 });

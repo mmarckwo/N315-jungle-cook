@@ -8,7 +8,7 @@ export function changePage(pageID, subPageID, callback) {
         callback();
       }
     });
-    console.log("a");
+    // console.log(a);
   } else if (subPageID != undefined) {
     $.get(`pages/subpages/${subPageID}.html`, function (data) {
       //console.log("data " + data);

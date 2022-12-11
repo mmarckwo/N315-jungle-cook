@@ -81,57 +81,165 @@ p {
   font-family: "Lato Reg";
   src: url(/fonts/Lato-Regular.ttf);
 }
-nav {
-  width: 100%;
-  height: 120px;
-  background-color: transparent;
-  display: flex;
-  font-family: "Caveat";
-  font-size: 25pt;
-  justify-content: space-evenly;
-  align-items: center;
+@media screen, (max-width: 1280px) {
+  nav {
+    width: 100%;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
+    font-family: "Caveat";
+    font-size: 25pt;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  nav .logo {
+    width: 167px;
+    height: 55px;
+    align-items: left;
+    justify-content: left;
+    margin-left: 0px;
+    margin-right: 400px;
+  }
+  nav li, nav a {
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    font-size: 20pt;
+  }
+  nav li a:is(:link, :active, :visited).active {
+    background-color: transparent;
+    color: black;
+    text-decoration: underline solid #000 3px;
+    text-underline-offset: 10px;
+  }
+  nav button {
+    width: 158px;
+    height: 52px;
+    font-family: "Caveat";
+    font-size: 25pt;
+    align-items: center;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #ffd972;
+    box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+  }
+  nav button a {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
+  }
 }
-nav .logo {
-  width: 167px;
-  height: 55px;
-  align-items: left;
-  justify-content: left;
-  margin-left: 0px;
-  margin-right: 400px;
+@media screen, (max-width: 768px) {
+  nav {
+    width: 100%;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
+    font-family: "Caveat";
+    font-size: 25pt;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  nav .logo {
+    width: 167px;
+    height: 55px;
+    align-items: left;
+    justify-content: left;
+    margin-left: 0px;
+    margin-right: 400px;
+  }
+  nav li, nav a {
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    font-size: 20pt;
+  }
+  nav li a:is(:link, :active, :visited).active {
+    background-color: transparent;
+    color: black;
+    text-decoration: underline solid #000 3px;
+    text-underline-offset: 10px;
+  }
+  nav button {
+    width: 158px;
+    height: 52px;
+    font-family: "Caveat";
+    font-size: 25pt;
+    align-items: center;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #ffd972;
+    box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+  }
+  nav button a {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
+  }
 }
-nav li, nav a {
-  justify-content: space-evenly;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  list-style-type: none;
-  font-size: 20pt;
+@media screen, (min-width: 360px) {
+  nav {
+    width: 100%;
+    height: 120px;
+    background-color: transparent;
+    display: flex;
+    font-family: "Caveat";
+    font-size: 25pt;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  nav .logo {
+    width: 167px;
+    height: 55px;
+    align-items: left;
+    justify-content: left;
+    margin-left: 0px;
+    margin-right: 400px;
+  }
+  nav li, nav a {
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    font-size: 20pt;
+  }
+  nav li a:is(:link, :active, :visited).active {
+    background-color: transparent;
+    color: black;
+    text-decoration: underline solid #000 3px;
+    text-underline-offset: 10px;
+  }
+  nav button {
+    width: 158px;
+    height: 52px;
+    font-family: "Caveat";
+    font-size: 25pt;
+    align-items: center;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #ffd972;
+    box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+  }
+  nav button a {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
+  }
 }
-nav li a:is(:link, :active, :visited).active {
-  color: black;
-  text-decoration: underline solid #000 3px;
-  text-underline-offset: 10px;
-}
-nav button {
-  width: 158px;
-  height: 52px;
-  font-family: "Caveat";
-  font-size: 25pt;
-  align-items: center;
-  border-radius: 25px;
-  border-style: none;
-  background-color: #ffd972;
-  box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
-}
-nav button a {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  text-decoration: none;
-  color: black;
-  font-size: 20pt;
-}
-
 footer .footerWrap {
   max-width: 100%;
   max-height: 60px;
