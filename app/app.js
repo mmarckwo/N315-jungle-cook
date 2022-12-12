@@ -19,12 +19,20 @@ function route() {
     if (pageID == subPageID) {
       MODEL.changePage(pageID);
     } else if (pageID == "createrecipe") {
+      if (jQuery.isEmptyObject(MODEL.getUserInfo())) {
+        alert("Please log in first to view this page.");
+        return;
+      }
       MODEL.changePage(pageID, subPageID, createRecipeListeners);
     } else if (pageID == "login") {
       MODEL.changePage(pageID, subPageID, loginListeners);
     } else if (pageID == "home") {
       MODEL.changePage(pageID, subPageID);
     } else if (pageID == "yourrecipes") {
+      if (jQuery.isEmptyObject(MODEL.getUserInfo())) {
+        alert("Please log in first to view this page.");
+        return;
+      }
       if (subPageID == "viewrecipe") {
         MODEL.changePage(pageID, subPageID, customRecipeListeners);
       } else if (subPageID == "editrecipe") {
