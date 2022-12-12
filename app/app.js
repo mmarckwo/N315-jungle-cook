@@ -64,8 +64,8 @@ function loginListeners() {
 }
 
 function createRecipeListeners() {
-  // default number of fields for both is 3.
-  var stepCount = 3;
+  // default number of fields.
+  var stepCount = 5;
   var ingredientCount = 3;
 
   $("#addStep").on("click", (e) => {
@@ -101,7 +101,7 @@ function createRecipeListeners() {
 
     // add to recipe json when done.
 
-    for (let i = 0; i < stepCount; i++) {
+    for (let i = 1; i < stepCount; i++) {
       let test = $(`#step${i}`).val();
       console.log(test);
     }
