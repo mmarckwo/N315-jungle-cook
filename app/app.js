@@ -212,6 +212,16 @@ function yourRecipesListeners() {
           ${recipe.steps[1]}
         </p>
 
+        <div class="info">
+          <div class="info1">
+            <img src="img/time.svg" alt="" class="time" />
+            <p>${recipe.steps[2]}</p>
+          </div>
+          <div class="info2">
+            <img src="img/servings.svg" alt="" class="yield" />
+            <p>${recipe.steps[3]}</p>
+          </div>
+        </div>
       </div>
       <div class="buttons">
         <button class="edit">
@@ -234,8 +244,20 @@ function customRecipeListeners() {
   var recipe = MODEL.getRecipeList()[MODEL.getViewingRecipe()];
   console.log(recipe);
 
+  // set recipe description.
   $(".desc p").html(`${recipe.steps[1]}`);
-  $(".ingredient li").html(`${recipe.steps[4]}`);
+
+  // set recipe ingredients.
+  $(".ingredient li").html("");
+  $.each(recipe.ingredients, function (i, ingred) {
+    $(".ingredient li").append(`<ul>${ingred}</ul>`);
+  });
+
+  // set recipe steps.
+  $(".instructions li").html("");
+  $.each(recipe.customSteps, function (i, step) {
+    $(".instructions li").append(`<ul>${step}</ul>`);
+  });
 }
 
 const activePage = window.location.pathname;
