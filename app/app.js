@@ -111,12 +111,17 @@ function createRecipeListeners() {
     // add to recipe json when done.
     var recipe = {
       steps: [],
+      customSteps: [],
       ingredients: [],
     };
 
     for (let i = 1; i < stepCount; i++) {
       let step = $(`#step${i}`).val();
-      recipe.steps.push(step);
+      if (i >= 5) {
+        recipe.customSteps.push(step);
+      } else {
+        recipe.steps.push(step);
+      }
     }
 
     for (let i = 0; i < ingredientCount; i++) {
