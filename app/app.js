@@ -54,7 +54,11 @@ function loginListeners() {
     let password = $("#loginPw").val();
     console.log(email, password);
 
-    console.log(MODEL.getUserInfo());
+    if (jQuery.isEmptyObject(MODEL.getUserInfo())) {
+      alert("No account has been made yet. Sign up first.");
+    } else {
+      alert("You are already logged in.");
+    }
   });
 
   $("#createSubmit").on("click", (e) => {
