@@ -140,7 +140,6 @@ function createRecipeListeners() {
 function editRecipeListeners() {
   // get the current recipe.
   var recipe = MODEL.getRecipeList()[MODEL.getViewingRecipe()];
-  // console.log(recipe);
 
   // insert user's name into h1.
   $("h1").html(`Hey ${MODEL.getUserInfo().firstName}, edit your recipe!`);
@@ -289,7 +288,6 @@ function yourRecipesListeners() {
 
 function customRecipeListeners() {
   var recipe = MODEL.getRecipeList()[MODEL.getViewingRecipe()];
-  // console.log(recipe);
 
   // set recipe description.
   $(".desc p").html(`${recipe.steps[1]}`);
