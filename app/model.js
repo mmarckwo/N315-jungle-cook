@@ -59,3 +59,8 @@ export function setViewingRecipe(recipeID) {
 export function updateRecipe(recipe) {
   recipeList[viewingRecipe] = recipe;
 }
+
+export function deleteRecipe(id) {
+  recipeList.splice(id, 1);
+  console.log(recipeList);
+}

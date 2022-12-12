@@ -140,7 +140,7 @@ function createRecipeListeners() {
 function editRecipeListeners() {
   // get the current recipe.
   var recipe = MODEL.getRecipeList()[MODEL.getViewingRecipe()];
-  console.log(recipe);
+  // console.log(recipe);
 
   // insert user's name into h1.
   $("h1").html(`Hey ${MODEL.getUserInfo().firstName}, edit your recipe!`);
@@ -263,8 +263,8 @@ function yourRecipesListeners() {
         <button class="edit">
           <a class="viewRecipe" href="#yourrecipes/editrecipe" id=${index}>Edit Recipe</a>
         </button>
-        <button class="delete">
-          <a class="viewRecipe" href="pages/yourrecipes.html" id=${index}>Delete</a>
+        <button class="delete" id="delete${index}">
+          <a class="deleteButton" href="pages/yourrecipes.html">Delete</a>
         </button>
       </div>
     </div>
@@ -273,12 +273,23 @@ function yourRecipesListeners() {
     $(".viewRecipe").on("click", (e) => {
       MODEL.setViewingRecipe(e.target.id);
     });
+
+    // delete the recipe, refresh the page.
+    $(`#delete${index}`).on("click", (e) => {
+      e.preventDefault();
+      var id = $(`#delete${index}`).attr("id");
+      id = id.replace("delete", "");
+      MODEL.deleteRecipe(id);
+
+      // refresh the page.
+      MODEL.changePage("yourrecipes", null, yourRecipesListeners);
+    });
   });
 }
 
 function customRecipeListeners() {
   var recipe = MODEL.getRecipeList()[MODEL.getViewingRecipe()];
-  console.log(recipe);
+  // console.log(recipe);
 
   // set recipe description.
   $(".desc p").html(`${recipe.steps[1]}`);
@@ -293,11 +304,6 @@ function customRecipeListeners() {
   $(".instructions li").html("");
   $.each(recipe.customSteps, function (i, step) {
     $(".instructions li").append(`<ul>${step}</ul>`);
-  });
-
-  // edit button listener.
-  $("button").on("click", (e) => {
-    console.log("hi");
   });
 }
 
