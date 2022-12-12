@@ -177,6 +177,26 @@ function editRecipeListeners() {
     );
   });
 
+  // populate input field values with recipe data.
+  $("#step1").val(recipe.steps[0]);
+  $("#step2").val(recipe.steps[1]);
+  $("#step3").val(recipe.steps[2]);
+  $("#step4").val(recipe.steps[3]);
+  // loop through custom steps and add fields with data for each step.
+  $.each(recipe.customSteps, function (i, step) {
+    $("#addStep").get(0).click();
+    $(`#step${i + 5}`).val(step);
+  });
+
+  $("#ingred0").val(recipe.ingredients[0]);
+  $("#ingred1").val(recipe.ingredients[1]);
+  $("#ingred2").val(recipe.ingredients[2]);
+  // loop through extra ingredients and add fields with data for each ingredient.
+  for (let i = 3; i < recipe.ingredients.length; i++) {
+    $("#addIngredient").get(0).click();
+    $(`#ingred${i}`).val(recipe.ingredients[i]);
+  }
+
   $("#submitBtn").on("click", (e) => {
     e.preventDefault();
 
@@ -291,6 +311,6 @@ const navLinks = document.querySelectorAll("nav li a").forEach((link) => {
 $(document).ready(function () {
   initLinkListener();
   loginListeners();
-  createRecipeListeners();
-  editRecipeListeners();
+  // createRecipeListeners();
+  // editRecipeListeners();
 });
