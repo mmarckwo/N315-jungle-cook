@@ -24,6 +24,12 @@ function route() {
       MODEL.changePage(pageID, subPageID, loginListeners);
     } else if (pageID == "home") {
       MODEL.changePage(pageID, subPageID);
+    } else if ((pageID = "yourrecipes")) {
+      if (subPageID) {
+        MODEL.changePage(pageID, subPageID, customRecipeListeners);
+      } else {
+        MODEL.changePage(pageID, subPageID, yourRecipesListeners);
+      }
     } else {
       MODEL.changePage(pageID, subPageID);
     }
@@ -119,6 +125,8 @@ function createRecipeListeners() {
     }
 
     MODEL.addToRecipeList(recipe);
+    // send the user to view their newly-made recipe.
+    window.location.hash = "yourrecipes";
   });
 }
 
@@ -176,6 +184,53 @@ function editRecipeListeners() {
       // console.log(test);
     }
   });
+}
+
+function yourRecipesListeners() {
+  // set header to greet user.
+  $(".title").html(
+    `Hey, ${MODEL.getUserInfo().firstName}, here are your recipes!`
+  );
+
+  // populate with available recipes.
+  $.each(MODEL.getRecipeList(), function (index, recipe) {
+    $(".col").append(`<div class="recipe">
+    <div class="recipeimg">
+      <button class="view">
+        <a class="viewRecipe" href="#yourrecipes/viewrecipe" id="${index}">View</a>
+      </button>
+    </div>
+    <div class="card">
+      <div class="cardcontent">
+        <h1>${recipe.steps[0]}</h1>
+        <p>
+          ${recipe.steps[1]}
+        </p>
+
+      </div>
+      <div class="buttons">
+        <button class="edit">
+          <a class="viewRecipe" href="#yourrecipes/editrecipe" id=${index}>Edit Recipe</a>
+        </button>
+        <button class="delete">
+          <a class="viewRecipe" href="pages/yourrecipes.html" id=${index}>Delete</a>
+        </button>
+      </div>
+    </div>
+  </div>`);
+
+    $(".viewRecipe").on("click", (e) => {
+      MODEL.setViewingRecipe(e.target.id);
+    });
+  });
+}
+
+function customRecipeListeners() {
+  var recipe = MODEL.getRecipeList()[MODEL.getViewingRecipe()];
+  console.log(recipe);
+
+  $(".desc p").html(`${recipe.steps[1]}`);
+  $(".ingredient li").html(`${recipe.steps[4]}`);
 }
 
 const activePage = window.location.pathname;
