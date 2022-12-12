@@ -1,5 +1,5 @@
 // DESK
-@media screen, (min-width: 1280px){
+@media screen and (min-width: 1280px) and (max-width: 1920px){
   .home {
   .hero {
     width: 100vw;
@@ -95,7 +95,7 @@
 }
 
 // // TAB
-// @media screen, (min-width: 768px){
+// @media screen and (min-width: 768px) and (max-width: 1000px) {
 //   .home {
 //   .hero {
 //     width: 768vw;
@@ -191,7 +191,7 @@
 // }
 
 // // MOB
-// @media screen, (min-width: 360px){
+// @media screen and (min-width: 360px) and (max-width: 700px) {
 //   .home {
 //   .hero {
 //     width: 360vw;
@@ -285,3 +285,4 @@
 //   // }
 // }
 // }
+

@@ -1,5 +1,5 @@
 // DESK
-@media screen, (min-width: 1280px){
+@media screen and (min-width: 1280px) and (max-width: 1920px){
   footer {
   .footerWrap {
     max-width: 100%;
@@ -52,7 +52,7 @@
 }
 
 // // TAB
-// @media screen, (min-width: 768px){
+// @media screen and (min-width: 768px) and (max-width: 1000px){
 //   footer {
 //   .footerWrap {
 //     max-width: 100%;
@@ -106,7 +106,7 @@
 // }
 
 // // MOB
-// @media screen, (min-width: 360px){
+// @media screen and (min-width: 360px) and (max-width: 700px){
 //   footer {
 //   .footerWrap {
 //     max-width: 100%;
