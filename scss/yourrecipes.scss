@@ -1,4 +1,320 @@
-.yourrecipes {
+// DESK
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+  .yourrecipes {
+    height: 100vh;
+    .hero {
+      width: 100vw;
+      height: 100vh;
+      background-color: #a7e8bd;
+      // z-index: -1;
+      // position: fixed;
+      // bottom: 0;
+      // right: 0;
+  
+      .heroimg {
+        img {
+          width: 100vw;
+          opacity: 30%;
+        }
+      }
+    }
+  
+    .content {
+      // position: absolute;
+      justify-content: center;
+      align-items: center;
+      margin: 75px;
+  
+      .title {
+        font-family: "Caveat Bold";
+        font-size: 25pt;
+        margin-left: 115px;
+        margin-bottom: 50px;
+      }
+  
+      .row {
+        .col {
+          display: flex;
+          margin: 20px;
+          justify-content: space-evenly;
+  
+          .recipe {
+            display: flex;
+            .recipeimg {
+              width: 300px;
+              height: 265px;
+              background-image: url(../img/recipe-pizza.jpg);
+              background-size: cover;
+              background-position: center;
+              background-repeat: repeat;
+              border-radius: 26px;
+              overflow: hidden;
+  
+              .view {
+                width: 128px;
+                height: 42px;
+                border-radius: 26px;
+                background-color: #ffd972;
+                border-style: none;
+                transform: translate(66%, 275%);
+                box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+  
+  
+                a {
+                  text-decoration: none;
+                  font-family: "Caveat";
+                  font-size: 20pt;
+                  color: #000;
+                }
+              }
+            }
+  
+            .card {
+              width: 225px;
+              height: 265px;
+              align-items: center;
+              background-color: #fff;
+              border-radius: 26px;
+  
+              .cardcontent {
+                padding: 25px;
+                justify-content: space-evenly;
+  
+                h1 {
+                  font-family: "Lato Black";
+                  font-size: 15pt;
+                  text-align: center;
+                  text-decoration: underline;
+                }
+                p {
+                  font-family: "Lato";
+                  font-size: 8pt;
+                  letter-spacing: 0.5pt;
+                }
+  
+                .info {
+                  .info1 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 10px;
+  
+                    .time {
+                      width: 23px;
+                      height: 23px;
+                    }
+                    p {
+                      text-align: center;
+                    }
+                  }
+  
+                  .info2 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 15px;
+  
+                    .yield {
+                      width: 23px;
+                      height: 23px;
+                    }
+                    p {
+                      text-align: center;
+                    }
+                  }
+                }
+              }
+  
+              .buttons {
+                  display: flex;
+                  width: 100%;
+                  
+                .edit,
+                .delete {
+                  width: 128px;
+                  height: 42px;
+                  border-radius: 26px;
+                  background-color: #ffd972;
+                  box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+  
+                  border-style: none;
+  
+                  a {
+                    text-decoration: none;
+                    font-family: "Caveat";
+                    font-size: 20pt;
+                    color: #000;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// TAB
+@media screen and (min-width: 768px) and (max-width: 1279px)  {
+  .yourrecipes {
+    height: 100vh;
+    .hero {
+      width: 100vw;
+      height: 100vh;
+      background-color: #a7e8bd;
+      // z-index: -1;
+      // position: fixed;
+      // bottom: 0;
+      // right: 0;
+  
+      .heroimg {
+        img {
+          width: 100vw;
+          opacity: 30%;
+        }
+      }
+    }
+  
+    .content {
+      // position: absolute;
+      justify-content: center;
+      align-items: center;
+      margin: 75px;
+  
+      .title {
+        font-family: "Caveat Bold";
+        font-size: 25pt;
+        margin-left: 115px;
+        margin-bottom: 50px;
+      }
+  
+      .row {
+        .col {
+          display: flex;
+          margin: 20px;
+          justify-content: space-evenly;
+  
+          .recipe {
+            display: flex;
+            .recipeimg {
+              width: 300px;
+              height: 265px;
+              background-image: url(../img/recipe-pizza.jpg);
+              background-size: cover;
+              background-position: center;
+              background-repeat: repeat;
+              border-radius: 26px;
+              overflow: hidden;
+  
+              .view {
+                width: 128px;
+                height: 42px;
+                border-radius: 26px;
+                background-color: #ffd972;
+                border-style: none;
+                transform: translate(66%, 275%);
+                box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+  
+  
+                a {
+                  text-decoration: none;
+                  font-family: "Caveat";
+                  font-size: 20pt;
+                  color: #000;
+                }
+              }
+            }
+  
+            .card {
+              width: 225px;
+              height: 265px;
+              align-items: center;
+              background-color: #fff;
+              border-radius: 26px;
+  
+              .cardcontent {
+                padding: 25px;
+                justify-content: space-evenly;
+  
+                h1 {
+                  font-family: "Lato Black";
+                  font-size: 15pt;
+                  text-align: center;
+                  text-decoration: underline;
+                }
+                p {
+                  font-family: "Lato";
+                  font-size: 8pt;
+                  letter-spacing: 0.5pt;
+                }
+  
+                .info {
+                  .info1 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 10px;
+  
+                    .time {
+                      width: 23px;
+                      height: 23px;
+                    }
+                    p {
+                      text-align: center;
+                    }
+                  }
+  
+                  .info2 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 15px;
+  
+                    .yield {
+                      width: 23px;
+                      height: 23px;
+                    }
+                    p {
+                      text-align: center;
+                    }
+                  }
+                }
+              }
+  
+              .buttons {
+                  display: flex;
+                  width: 100%;
+                  
+                .edit,
+                .delete {
+                  width: 128px;
+                  height: 42px;
+                  border-radius: 26px;
+                  background-color: #ffd972;
+                  box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+  
+                  border-style: none;
+  
+                  a {
+                    text-decoration: none;
+                    font-family: "Caveat";
+                    font-size: 20pt;
+                    color: #000;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// MOB
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .yourrecipes {
   height: 100vh;
   .hero {
     width: 100vw;
@@ -151,6 +467,15 @@
     }
   }
 }
+}
+
+
+
+
+
+
+
+
 
 // #recipe {
 //     display: flex;

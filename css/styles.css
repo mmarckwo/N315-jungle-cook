@@ -134,6 +134,112 @@ p {
     font-size: 20pt;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  nav {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    font-family: "Caveat";
+    font-size: 20pt;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  nav .logo {
+    width: 137px;
+    height: 47px;
+    align-items: left;
+    justify-content: left;
+    margin-left: 0px;
+    margin-right: 525px;
+  }
+  nav li, nav a {
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    font-size: 18pt;
+  }
+  nav li a:is(:link, :active, :visited).active {
+    background-color: transparent;
+    color: black;
+    text-decoration: underline solid #000 3px;
+    text-underline-offset: 6px;
+  }
+  nav button {
+    width: 128px;
+    height: 22px;
+    font-family: "Caveat";
+    font-size: 20pt;
+    align-items: center;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #ffd972;
+    box-shadow: 3px 27px 26px rgba(0, 0, 0, 0.3);
+  }
+  nav button a {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 18pt;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  nav {
+    width: 100%;
+    height: 105px;
+    background-color: transparent;
+    display: flex;
+    font-family: "Caveat";
+    font-size: 18pt;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  nav .logo {
+    width: 137px;
+    height: 47px;
+    align-items: left;
+    justify-content: left;
+    margin-left: 0px;
+    margin-right: 125px;
+  }
+  nav li, nav a {
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    font-size: 16pt;
+  }
+  nav li a:is(:link, :active, :visited).active {
+    background-color: transparent;
+    color: black;
+    text-decoration: underline solid #000 3px;
+    text-underline-offset: 5px;
+  }
+  nav button {
+    width: 128px;
+    height: 22px;
+    font-family: "Caveat";
+    font-size: 18pt;
+    align-items: center;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #ffd972;
+    box-shadow: 3px 27px 26px rgba(0, 0, 0, 0.3);
+  }
+  nav button a {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 18pt;
+  }
+}
 @media screen and (min-width: 1280px) and (max-width: 1920px) {
   footer .footerWrap {
     max-width: 100%;
@@ -159,6 +265,94 @@ p {
     display: flex;
     margin-left: 350px;
     margin-right: 350px;
+  }
+  footer .footerWrap .footlinks a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  footer .footerWrap .socials {
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    display: flex;
+  }
+  footer .footerWrap .socials .fb {
+    margin: 5px;
+  }
+  footer .footerWrap .socials .ig {
+    margin: 5px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  footer .footerWrap {
+    max-width: 100%;
+    max-height: 60px;
+    display: flex;
+    font-family: "Lato Italic";
+    font-size: 10pt;
+    letter-spacing: 1pt;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    background-color: transparent;
+    margin: 3px;
+  }
+  footer .footerWrap .c1 {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  footer .footerWrap .footlinks {
+    justify-content: center;
+    display: flex;
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+  footer .footerWrap .footlinks a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  footer .footerWrap .socials {
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    display: flex;
+  }
+  footer .footerWrap .socials .fb {
+    margin: 5px;
+  }
+  footer .footerWrap .socials .ig {
+    margin: 5px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  footer .footerWrap {
+    max-width: 100%;
+    max-height: 120px;
+    display: flex;
+    font-family: "Lato Italic";
+    font-size: 10pt;
+    letter-spacing: 1pt;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    background-color: transparent;
+    margin: 3px;
+  }
+  footer .footerWrap .c1 {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  footer .footerWrap .footlinks {
+    justify-content: center;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   footer .footerWrap .footlinks a {
     margin: 10px;
@@ -231,6 +425,144 @@ p {
     transform: translate(50%, 75%);
     z-index: -1;
     box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home .smallcircle .textbox {
+    padding-top: 66px;
+    padding-bottom: 66px;
+    padding-right: 33px;
+    padding-left: 36px;
+  }
+  .home .smallcircle .textbox p {
+    font-family: "Lato Italic";
+    font-size: 8pt;
+    letter-spacing: 1pt;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .home {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .hero {
+    width: 768vw;
+    height: 1024vh;
+    background-color: #f25c54;
+  }
+  .home .hero .heroimg img {
+    width: 768vw;
+    opacity: 30%;
+  }
+  .home .bigcircle {
+    border-radius: 200px;
+    background-color: #ffd972;
+    width: 358px;
+    height: 358px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home .bigcircle .textbox {
+    padding: 33px;
+  }
+  .home .bigcircle .textbox h1 {
+    font-family: "Caveat Bold";
+    font-size: 24pt;
+  }
+  .home .bigcircle .textbox p {
+    font-family: "Lato";
+    font-size: 13pt;
+    letter-spacing: 1pt;
+  }
+  .home .smallcircle {
+    border-radius: 200px;
+    background-color: #fcbcb8;
+    max-width: 168px;
+    max-height: 168px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(50%, 75%);
+    z-index: -1;
+    box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home .smallcircle .textbox {
+    padding-top: 66px;
+    padding-bottom: 66px;
+    padding-right: 33px;
+    padding-left: 36px;
+  }
+  .home .smallcircle .textbox p {
+    font-family: "Lato Italic";
+    font-size: 8pt;
+    letter-spacing: 1pt;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .home {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .hero {
+    width: 360vw;
+    height: 700vh;
+    background-color: #f25c54;
+  }
+  .home .hero .heroimg img {
+    width: 360vw;
+    opacity: 30%;
+  }
+  .home .bigcircle {
+    border-radius: 200px;
+    background-color: #ffd972;
+    width: 258px;
+    height: 258px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 27px 26px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home .bigcircle .textbox {
+    padding: 33px;
+  }
+  .home .bigcircle .textbox h1 {
+    font-family: "Caveat Bold";
+    font-size: 18pt;
+  }
+  .home .bigcircle .textbox p {
+    font-family: "Lato";
+    font-size: 9pt;
+    letter-spacing: 1pt;
+  }
+  .home .smallcircle {
+    border-radius: 200px;
+    background-color: #fcbcb8;
+    max-width: 121px;
+    max-height: 121px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(50%, 75%);
+    z-index: -1;
+    box-shadow: 3px 27px 26px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -526,50 +858,681 @@ p {
     text-align: center;
   }
 }
-.pizzarecipe .row .col {
-  display: flex;
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .browse {
+    height: 1600vh;
+  }
+  .browse .hero {
+    width: 768vw;
+    height: 1600vh;
+    background-color: #a7e8bd;
+  }
+  .browse .hero .heroimg img {
+    width: 768vw;
+    opacity: 30%;
+  }
+  .browse .content {
+    justify-content: center;
+    align-items: center;
+    margin: 75px;
+  }
+  .browse .content .title {
+    font-family: "Caveat Bold";
+    font-size: 25pt;
+    margin-left: 105px;
+    margin-bottom: 50px;
+  }
+  .browse .content .row .col {
+    margin: 20px;
+    justify-content: space-evenly;
+  }
+  .browse .content .row .col .pizza {
+    display: flex;
+  }
+  .browse .content .row .col .pizza .pizzaimage {
+    width: 300px;
+    height: 265px;
+    background-image: url(../img/recipe-pizza.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+  .browse .content .row .col .pizza .card {
+    width: 225px;
+    height: 265px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 26px;
+  }
+  .browse .content .row .col .pizza .card .cardcontent {
+    padding: 25px;
+    justify-content: space-evenly;
+  }
+  .browse .content .row .col .pizza .card .cardcontent h1 {
+    font-family: "Lato Black";
+    font-size: 15pt;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .browse .content .row .col .pizza .card .cardcontent p {
+    font-family: "Lato";
+    font-size: 8pt;
+    letter-spacing: 0.5pt;
+  }
+  .browse .content .row .col .pizza .card .cardcontent .info .info1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+  .browse .content .row .col .pizza .card .cardcontent .info .info1 .time {
+    width: 23px;
+    height: 23px;
+  }
+  .browse .content .row .col .pizza .card .cardcontent .info .info1 p {
+    text-align: center;
+  }
+  .browse .content .row .col .pizza .card .cardcontent .info .info2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+  }
+  .browse .content .row .col .pizza .card .cardcontent .info .info2 .yield {
+    width: 23px;
+    height: 23px;
+  }
+  .browse .content .row .col .pizza .card .cardcontent .info .info2 p {
+    text-align: center;
+  }
+  .browse .content .row .col .burger {
+    display: flex;
+  }
+  .browse .content .row .col .burger .burgerimage {
+    width: 300px;
+    height: 265px;
+    background-image: url(../img/recipe-burger.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+  .browse .content .row .col .burger .card {
+    width: 225px;
+    height: 265px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 26px;
+  }
+  .browse .content .row .col .burger .card .cardcontent {
+    padding: 25px;
+    justify-content: space-evenly;
+  }
+  .browse .content .row .col .burger .card .cardcontent h1 {
+    font-family: "Lato Black";
+    font-size: 15pt;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .browse .content .row .col .burger .card .cardcontent p {
+    font-family: "Lato";
+    font-size: 8pt;
+    letter-spacing: 0.5pt;
+  }
+  .browse .content .row .col .burger .card .cardcontent .info .info1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+  .browse .content .row .col .burger .card .cardcontent .info .info1 .time {
+    width: 23px;
+    height: 23px;
+  }
+  .browse .content .row .col .burger .card .cardcontent .info .info1 p {
+    text-align: center;
+  }
+  .browse .content .row .col .burger .card .cardcontent .info .info2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+  }
+  .browse .content .row .col .burger .card .cardcontent .info .info2 .yield {
+    width: 23px;
+    height: 23px;
+  }
+  .browse .content .row .col .burger .card .cardcontent .info .info2 p {
+    text-align: center;
+  }
+  .browse .content .row .col .biryani {
+    display: flex;
+  }
+  .browse .content .row .col .biryani .byraniimage {
+    width: 300px;
+    height: 265px;
+    background-image: url(../img/recipe-pilaf.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+  .browse .content .row .col .biryani img {
+    width: 300px;
+    height: 265px;
+    border-radius: 26px;
+  }
+  .browse .content .row .col .biryani .card {
+    width: 225px;
+    height: 265px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 26px;
+  }
+  .browse .content .row .col .biryani .card .cardcontent {
+    padding: 25px;
+    justify-content: space-evenly;
+  }
+  .browse .content .row .col .biryani .card .cardcontent h1 {
+    font-family: "Lato Black";
+    font-size: 15pt;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .browse .content .row .col .biryani .card .cardcontent p {
+    font-family: "Lato";
+    font-size: 8pt;
+    letter-spacing: 0.5pt;
+  }
+  .browse .content .row .col .biryani .card .cardcontent .info .info1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+  .browse .content .row .col .biryani .card .cardcontent .info .info1 .time {
+    width: 23px;
+    height: 23px;
+  }
+  .browse .content .row .col .biryani .card .cardcontent .info .info1 p {
+    text-align: center;
+  }
+  .browse .content .row .col .biryani .card .cardcontent .info .info2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+  }
+  .browse .content .row .col .biryani .card .cardcontent .info .info2 .yield {
+    width: 23px;
+    height: 23px;
+  }
+  .browse .content .row .col .biryani .card .cardcontent .info .info2 p {
+    text-align: center;
+  }
+  .browse .content .row .col .chowmein {
+    display: flex;
+  }
+  .browse .content .row .col .chowmein .meinimage {
+    width: 300px;
+    height: 265px;
+    background-image: url(../img/recipe-chowmein.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+  .browse .content .row .col .chowmein .card {
+    width: 225px;
+    height: 265px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 26px;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent {
+    padding: 25px;
+    justify-content: space-evenly;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent h1 {
+    font-family: "Lato Black";
+    font-size: 15pt;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent p {
+    font-family: "Lato";
+    font-size: 8pt;
+    letter-spacing: 0.5pt;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent .info .info1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent .info .info1 .time {
+    width: 23px;
+    height: 23px;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent .info .info1 p {
+    text-align: center;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent .info .info2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent .info .info2 .yield {
+    width: 23px;
+    height: 23px;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent .info .info2 p {
+    text-align: center;
+  }
 }
-.pizzarecipe .row .col .pza {
-  width: 468px;
-  height: 421px;
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .browse {
+    height: 1800vh;
+  }
+  .browse .hero {
+    width: 360vw;
+    height: 1800vh;
+    background-color: #a7e8bd;
+  }
+  .browse .hero .heroimg img {
+    width: 360vw;
+    opacity: 30%;
+  }
+  .browse .content {
+    justify-content: center;
+    align-items: center;
+    margin: 75px;
+  }
+  .browse .content .title {
+    font-family: "Caveat Bold";
+    font-size: 20pt;
+    margin-left: 115px;
+    margin-bottom: 50px;
+  }
+  .browse .content .row .col {
+    margin: 20px;
+    justify-content: space-evenly;
+  }
+  .browse .content .row .col .pizza .pizzaimage {
+    width: 300px;
+    height: 150px;
+    background-image: url(../img/recipe-pizza.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+  .browse .content .row .col .pizza .card {
+    width: 300px;
+    height: 170px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 26px;
+  }
+  .browse .content .row .col .pizza .card .cardcontent {
+    padding: 25px;
+    justify-content: space-evenly;
+  }
+  .browse .content .row .col .pizza .card .cardcontent h1 {
+    font-family: "Lato Black";
+    font-size: 10pt;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .browse .content .row .col .pizza .card .cardcontent p {
+    font-family: "Lato";
+    font-size: 8pt;
+    letter-spacing: 0.5pt;
+  }
+  .browse .content .row .col .pizza .card .cardcontent .info .info1 {
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+  .browse .content .row .col .pizza .card .cardcontent .info .info1 .time {
+    width: 7px;
+    height: 7px;
+  }
+  .browse .content .row .col .pizza .card .cardcontent .info .info1 p {
+    text-align: center;
+  }
+  .browse .content .row .col .pizza .card .cardcontent .info .info2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+  }
+  .browse .content .row .col .pizza .card .cardcontent .info .info2 .yield {
+    width: 7px;
+    height: 7px;
+  }
+  .browse .content .row .col .pizza .card .cardcontent .info .info2 p {
+    text-align: center;
+  }
+  .browse .content .row .col .burger .burgerimage {
+    width: 300px;
+    height: 150px;
+    background-image: url(../img/recipe-burger.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+  .browse .content .row .col .burger .card {
+    width: 300px;
+    height: 170px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 26px;
+  }
+  .browse .content .row .col .burger .card .cardcontent {
+    padding: 25px;
+    justify-content: space-evenly;
+  }
+  .browse .content .row .col .burger .card .cardcontent h1 {
+    font-family: "Lato Black";
+    font-size: 10pt;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .browse .content .row .col .burger .card .cardcontent p {
+    font-family: "Lato";
+    font-size: 8pt;
+    letter-spacing: 0.5pt;
+  }
+  .browse .content .row .col .burger .card .cardcontent .info .info1 {
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+  .browse .content .row .col .burger .card .cardcontent .info .info1 .time {
+    width: 23px;
+    height: 23px;
+  }
+  .browse .content .row .col .burger .card .cardcontent .info .info1 p {
+    text-align: center;
+  }
+  .browse .content .row .col .burger .card .cardcontent .info .info2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+  }
+  .browse .content .row .col .burger .card .cardcontent .info .info2 .yield {
+    width: 23px;
+    height: 23px;
+  }
+  .browse .content .row .col .burger .card .cardcontent .info .info2 p {
+    text-align: center;
+  }
+  .browse .content .row .col .biryani .byraniimage {
+    width: 300px;
+    height: 150px;
+    background-image: url(../img/recipe-pilaf.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+  .browse .content .row .col .biryani img {
+    width: 300px;
+    height: 150px;
+    border-radius: 26px;
+  }
+  .browse .content .row .col .biryani .card {
+    width: 300px;
+    height: 170px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 26px;
+  }
+  .browse .content .row .col .biryani .card .cardcontent {
+    padding: 25px;
+    justify-content: space-evenly;
+  }
+  .browse .content .row .col .biryani .card .cardcontent h1 {
+    font-family: "Lato Black";
+    font-size: 10pt;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .browse .content .row .col .biryani .card .cardcontent p {
+    font-family: "Lato";
+    font-size: 8pt;
+    letter-spacing: 0.5pt;
+  }
+  .browse .content .row .col .biryani .card .cardcontent .info .info1 {
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+  .browse .content .row .col .biryani .card .cardcontent .info .info1 .time {
+    width: 23px;
+    height: 23px;
+  }
+  .browse .content .row .col .biryani .card .cardcontent .info .info1 p {
+    text-align: center;
+  }
+  .browse .content .row .col .biryani .card .cardcontent .info .info2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+  }
+  .browse .content .row .col .biryani .card .cardcontent .info .info2 .yield {
+    width: 23px;
+    height: 23px;
+  }
+  .browse .content .row .col .biryani .card .cardcontent .info .info2 p {
+    text-align: center;
+  }
+  .browse .content .row .col .chowmein .meinimage {
+    width: 300px;
+    height: 150px;
+    background-image: url(../img/recipe-chowmein.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+  .browse .content .row .col .chowmein .card {
+    width: 300px;
+    height: 170px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 26px;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent {
+    padding: 25px;
+    justify-content: space-evenly;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent h1 {
+    font-family: "Lato Black";
+    font-size: 10pt;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent p {
+    font-family: "Lato";
+    font-size: 8pt;
+    letter-spacing: 0.5pt;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent .info .info1 {
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent .info .info1 .time {
+    width: 23px;
+    height: 23px;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent .info .info1 p {
+    text-align: center;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent .info .info2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent .info .info2 .yield {
+    width: 23px;
+    height: 23px;
+  }
+  .browse .content .row .col .chowmein .card .cardcontent .info .info2 p {
+    text-align: center;
+  }
 }
-.pizzarecipe .row .col .desc h2 {
-  font-family: "Lato Black";
-  font-size: 25pt;
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+  .pizzarecipe .row .col {
+    display: flex;
+  }
+  .pizzarecipe .row .col .pza {
+    width: 468px;
+    height: 421px;
+  }
+  .pizzarecipe .row .col .desc h2 {
+    font-family: "Lato Black";
+    font-size: 25pt;
+  }
+  .pizzarecipe .row .col .desc p {
+    font-family: "Caveat";
+    font-size: 20pt;
+  }
+  .pizzarecipe .row .col .ingredient h2 {
+    font-family: "Lato Black";
+    font-size: 25pt;
+  }
+  .pizzarecipe .row .col .ingredient li {
+    list-style: none;
+    font-family: "Caveat";
+    font-size: 20pt;
+  }
+  .pizzarecipe .row .col .instructions h2 {
+    font-family: "Lato Black";
+    font-size: 25pt;
+  }
+  .pizzarecipe .row .col .instructions li {
+    list-style: none;
+  }
+  .pizzarecipe .row button {
+    width: 128px;
+    height: 42px;
+    background-color: #FFD972;
+    border-style: none;
+    border-radius: 25px;
+  }
+  .pizzarecipe .row button a {
+    text-decoration: none;
+    font-family: "Caveat";
+    font-size: 20pt;
+  }
 }
-.pizzarecipe .row .col .desc p {
-  font-family: "Caveat";
-  font-size: 20pt;
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .pizzarecipe .row .col {
+    display: flex;
+  }
+  .pizzarecipe .row .col .pza {
+    width: 468px;
+    height: 421px;
+  }
+  .pizzarecipe .row .col .desc h2 {
+    font-family: "Lato Black";
+    font-size: 25pt;
+  }
+  .pizzarecipe .row .col .desc p {
+    font-family: "Caveat";
+    font-size: 20pt;
+  }
+  .pizzarecipe .row .col .ingredient h2 {
+    font-family: "Lato Black";
+    font-size: 25pt;
+  }
+  .pizzarecipe .row .col .ingredient li {
+    list-style: none;
+    font-family: "Caveat";
+    font-size: 20pt;
+  }
+  .pizzarecipe .row .col .instructions h2 {
+    font-family: "Lato Black";
+    font-size: 25pt;
+  }
+  .pizzarecipe .row .col .instructions li {
+    list-style: none;
+  }
+  .pizzarecipe .row button {
+    width: 128px;
+    height: 42px;
+    background-color: #FFD972;
+    border-style: none;
+    border-radius: 25px;
+  }
+  .pizzarecipe .row button a {
+    text-decoration: none;
+    font-family: "Caveat";
+    font-size: 20pt;
+  }
 }
-.pizzarecipe .row .col .ingredient h2 {
-  font-family: "Lato Black";
-  font-size: 25pt;
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .pizzarecipe .row .col {
+    display: flex;
+  }
+  .pizzarecipe .row .col .pza {
+    width: 468px;
+    height: 421px;
+  }
+  .pizzarecipe .row .col .desc h2 {
+    font-family: "Lato Black";
+    font-size: 25pt;
+  }
+  .pizzarecipe .row .col .desc p {
+    font-family: "Caveat";
+    font-size: 20pt;
+  }
+  .pizzarecipe .row .col .ingredient h2 {
+    font-family: "Lato Black";
+    font-size: 25pt;
+  }
+  .pizzarecipe .row .col .ingredient li {
+    list-style: none;
+    font-family: "Caveat";
+    font-size: 20pt;
+  }
+  .pizzarecipe .row .col .instructions h2 {
+    font-family: "Lato Black";
+    font-size: 25pt;
+  }
+  .pizzarecipe .row .col .instructions li {
+    list-style: none;
+  }
+  .pizzarecipe .row button {
+    width: 128px;
+    height: 42px;
+    background-color: #FFD972;
+    border-style: none;
+    border-radius: 25px;
+  }
+  .pizzarecipe .row button a {
+    text-decoration: none;
+    font-family: "Caveat";
+    font-size: 20pt;
+  }
 }
-.pizzarecipe .row .col .ingredient li {
-  list-style: none;
-  font-family: "Caveat";
-  font-size: 20pt;
-}
-.pizzarecipe .row .col .instructions h2 {
-  font-family: "Lato Black";
-  font-size: 25pt;
-}
-.pizzarecipe .row .col .instructions li {
-  list-style: none;
-}
-.pizzarecipe .row button {
-  width: 128px;
-  height: 42px;
-  background-color: #FFD972;
-  border-style: none;
-  border-radius: 25px;
-}
-.pizzarecipe .row button a {
-  text-decoration: none;
-  font-family: "Caveat";
-  font-size: 20pt;
-}
-
 .burgrecipe .row .col {
   display: flex;
 }
@@ -995,131 +1958,384 @@ p {
     margin: 50px;
   }
 }
-.yourrecipes {
-  height: 100vh;
-}
-.yourrecipes .hero {
-  width: 100vw;
-  height: 100vh;
-  background-color: #a7e8bd;
-}
-.yourrecipes .hero .heroimg img {
-  width: 100vw;
-  opacity: 30%;
-}
-.yourrecipes .content {
-  justify-content: center;
-  align-items: center;
-  margin: 75px;
-}
-.yourrecipes .content .title {
-  font-family: "Caveat Bold";
-  font-size: 25pt;
-  margin-left: 115px;
-  margin-bottom: 50px;
-}
-.yourrecipes .content .row .col {
-  display: flex;
-  margin: 20px;
-  justify-content: space-evenly;
-}
-.yourrecipes .content .row .col .recipe {
-  display: flex;
-}
-.yourrecipes .content .row .col .recipe .recipeimg {
-  width: 300px;
-  height: 265px;
-  background-image: url(../img/recipe-pizza.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-  border-radius: 26px;
-  overflow: hidden;
-}
-.yourrecipes .content .row .col .recipe .recipeimg .view {
-  width: 128px;
-  height: 42px;
-  border-radius: 26px;
-  background-color: #ffd972;
-  border-style: none;
-  transform: translate(66%, 275%);
-  box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
-}
-.yourrecipes .content .row .col .recipe .recipeimg .view a {
-  text-decoration: none;
-  font-family: "Caveat";
-  font-size: 20pt;
-  color: #000;
-}
-.yourrecipes .content .row .col .recipe .card {
-  width: 225px;
-  height: 265px;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 26px;
-}
-.yourrecipes .content .row .col .recipe .card .cardcontent {
-  padding: 25px;
-  justify-content: space-evenly;
-}
-.yourrecipes .content .row .col .recipe .card .cardcontent h1 {
-  font-family: "Lato Black";
-  font-size: 15pt;
-  text-align: center;
-  text-decoration: underline;
-}
-.yourrecipes .content .row .col .recipe .card .cardcontent p {
-  font-family: "Lato";
-  font-size: 8pt;
-  letter-spacing: 0.5pt;
-}
-.yourrecipes .content .row .col .recipe .card .cardcontent .info .info1 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 10px;
-}
-.yourrecipes .content .row .col .recipe .card .cardcontent .info .info1 .time {
-  width: 23px;
-  height: 23px;
-}
-.yourrecipes .content .row .col .recipe .card .cardcontent .info .info1 p {
-  text-align: center;
-}
-.yourrecipes .content .row .col .recipe .card .cardcontent .info .info2 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 15px;
-}
-.yourrecipes .content .row .col .recipe .card .cardcontent .info .info2 .yield {
-  width: 23px;
-  height: 23px;
-}
-.yourrecipes .content .row .col .recipe .card .cardcontent .info .info2 p {
-  text-align: center;
-}
-.yourrecipes .content .row .col .recipe .card .buttons {
-  display: flex;
-  width: 100%;
-}
-.yourrecipes .content .row .col .recipe .card .buttons .edit,
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+  .yourrecipes {
+    height: 100vh;
+  }
+  .yourrecipes .hero {
+    width: 100vw;
+    height: 100vh;
+    background-color: #a7e8bd;
+  }
+  .yourrecipes .hero .heroimg img {
+    width: 100vw;
+    opacity: 30%;
+  }
+  .yourrecipes .content {
+    justify-content: center;
+    align-items: center;
+    margin: 75px;
+  }
+  .yourrecipes .content .title {
+    font-family: "Caveat Bold";
+    font-size: 25pt;
+    margin-left: 115px;
+    margin-bottom: 50px;
+  }
+  .yourrecipes .content .row .col {
+    display: flex;
+    margin: 20px;
+    justify-content: space-evenly;
+  }
+  .yourrecipes .content .row .col .recipe {
+    display: flex;
+  }
+  .yourrecipes .content .row .col .recipe .recipeimg {
+    width: 300px;
+    height: 265px;
+    background-image: url(../img/recipe-pizza.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+  .yourrecipes .content .row .col .recipe .recipeimg .view {
+    width: 128px;
+    height: 42px;
+    border-radius: 26px;
+    background-color: #ffd972;
+    border-style: none;
+    transform: translate(66%, 275%);
+    box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+  }
+  .yourrecipes .content .row .col .recipe .recipeimg .view a {
+    text-decoration: none;
+    font-family: "Caveat";
+    font-size: 20pt;
+    color: #000;
+  }
+  .yourrecipes .content .row .col .recipe .card {
+    width: 225px;
+    height: 265px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 26px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent {
+    padding: 25px;
+    justify-content: space-evenly;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent h1 {
+    font-family: "Lato Black";
+    font-size: 15pt;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent p {
+    font-family: "Lato";
+    font-size: 8pt;
+    letter-spacing: 0.5pt;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info1 .time {
+    width: 23px;
+    height: 23px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info1 p {
+    text-align: center;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info2 .yield {
+    width: 23px;
+    height: 23px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info2 p {
+    text-align: center;
+  }
+  .yourrecipes .content .row .col .recipe .card .buttons {
+    display: flex;
+    width: 100%;
+  }
+  .yourrecipes .content .row .col .recipe .card .buttons .edit,
 .yourrecipes .content .row .col .recipe .card .buttons .delete {
-  width: 128px;
-  height: 42px;
-  border-radius: 26px;
-  background-color: #ffd972;
-  box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
-  border-style: none;
-}
-.yourrecipes .content .row .col .recipe .card .buttons .edit a,
+    width: 128px;
+    height: 42px;
+    border-radius: 26px;
+    background-color: #ffd972;
+    box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+    border-style: none;
+  }
+  .yourrecipes .content .row .col .recipe .card .buttons .edit a,
 .yourrecipes .content .row .col .recipe .card .buttons .delete a {
-  text-decoration: none;
-  font-family: "Caveat";
-  font-size: 20pt;
-  color: #000;
+    text-decoration: none;
+    font-family: "Caveat";
+    font-size: 20pt;
+    color: #000;
+  }
 }
-
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .yourrecipes {
+    height: 100vh;
+  }
+  .yourrecipes .hero {
+    width: 100vw;
+    height: 100vh;
+    background-color: #a7e8bd;
+  }
+  .yourrecipes .hero .heroimg img {
+    width: 100vw;
+    opacity: 30%;
+  }
+  .yourrecipes .content {
+    justify-content: center;
+    align-items: center;
+    margin: 75px;
+  }
+  .yourrecipes .content .title {
+    font-family: "Caveat Bold";
+    font-size: 25pt;
+    margin-left: 115px;
+    margin-bottom: 50px;
+  }
+  .yourrecipes .content .row .col {
+    display: flex;
+    margin: 20px;
+    justify-content: space-evenly;
+  }
+  .yourrecipes .content .row .col .recipe {
+    display: flex;
+  }
+  .yourrecipes .content .row .col .recipe .recipeimg {
+    width: 300px;
+    height: 265px;
+    background-image: url(../img/recipe-pizza.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+  .yourrecipes .content .row .col .recipe .recipeimg .view {
+    width: 128px;
+    height: 42px;
+    border-radius: 26px;
+    background-color: #ffd972;
+    border-style: none;
+    transform: translate(66%, 275%);
+    box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+  }
+  .yourrecipes .content .row .col .recipe .recipeimg .view a {
+    text-decoration: none;
+    font-family: "Caveat";
+    font-size: 20pt;
+    color: #000;
+  }
+  .yourrecipes .content .row .col .recipe .card {
+    width: 225px;
+    height: 265px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 26px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent {
+    padding: 25px;
+    justify-content: space-evenly;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent h1 {
+    font-family: "Lato Black";
+    font-size: 15pt;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent p {
+    font-family: "Lato";
+    font-size: 8pt;
+    letter-spacing: 0.5pt;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info1 .time {
+    width: 23px;
+    height: 23px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info1 p {
+    text-align: center;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info2 .yield {
+    width: 23px;
+    height: 23px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info2 p {
+    text-align: center;
+  }
+  .yourrecipes .content .row .col .recipe .card .buttons {
+    display: flex;
+    width: 100%;
+  }
+  .yourrecipes .content .row .col .recipe .card .buttons .edit,
+.yourrecipes .content .row .col .recipe .card .buttons .delete {
+    width: 128px;
+    height: 42px;
+    border-radius: 26px;
+    background-color: #ffd972;
+    box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+    border-style: none;
+  }
+  .yourrecipes .content .row .col .recipe .card .buttons .edit a,
+.yourrecipes .content .row .col .recipe .card .buttons .delete a {
+    text-decoration: none;
+    font-family: "Caveat";
+    font-size: 20pt;
+    color: #000;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .yourrecipes {
+    height: 100vh;
+  }
+  .yourrecipes .hero {
+    width: 100vw;
+    height: 100vh;
+    background-color: #a7e8bd;
+  }
+  .yourrecipes .hero .heroimg img {
+    width: 100vw;
+    opacity: 30%;
+  }
+  .yourrecipes .content {
+    justify-content: center;
+    align-items: center;
+    margin: 75px;
+  }
+  .yourrecipes .content .title {
+    font-family: "Caveat Bold";
+    font-size: 25pt;
+    margin-left: 115px;
+    margin-bottom: 50px;
+  }
+  .yourrecipes .content .row .col {
+    display: flex;
+    margin: 20px;
+    justify-content: space-evenly;
+  }
+  .yourrecipes .content .row .col .recipe {
+    display: flex;
+  }
+  .yourrecipes .content .row .col .recipe .recipeimg {
+    width: 300px;
+    height: 265px;
+    background-image: url(../img/recipe-pizza.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+  .yourrecipes .content .row .col .recipe .recipeimg .view {
+    width: 128px;
+    height: 42px;
+    border-radius: 26px;
+    background-color: #ffd972;
+    border-style: none;
+    transform: translate(66%, 275%);
+    box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+  }
+  .yourrecipes .content .row .col .recipe .recipeimg .view a {
+    text-decoration: none;
+    font-family: "Caveat";
+    font-size: 20pt;
+    color: #000;
+  }
+  .yourrecipes .content .row .col .recipe .card {
+    width: 225px;
+    height: 265px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 26px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent {
+    padding: 25px;
+    justify-content: space-evenly;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent h1 {
+    font-family: "Lato Black";
+    font-size: 15pt;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent p {
+    font-family: "Lato";
+    font-size: 8pt;
+    letter-spacing: 0.5pt;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info1 .time {
+    width: 23px;
+    height: 23px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info1 p {
+    text-align: center;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info2 .yield {
+    width: 23px;
+    height: 23px;
+  }
+  .yourrecipes .content .row .col .recipe .card .cardcontent .info .info2 p {
+    text-align: center;
+  }
+  .yourrecipes .content .row .col .recipe .card .buttons {
+    display: flex;
+    width: 100%;
+  }
+  .yourrecipes .content .row .col .recipe .card .buttons .edit,
+.yourrecipes .content .row .col .recipe .card .buttons .delete {
+    width: 128px;
+    height: 42px;
+    border-radius: 26px;
+    background-color: #ffd972;
+    box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+    border-style: none;
+  }
+  .yourrecipes .content .row .col .recipe .card .buttons .edit a,
+.yourrecipes .content .row .col .recipe .card .buttons .delete a {
+    text-decoration: none;
+    font-family: "Caveat";
+    font-size: 20pt;
+    color: #000;
+  }
+}
 @media screen and (min-width: 1280px) and (max-width: 1920px) {
   .create {
     justify-content: center;
@@ -1384,6 +2600,285 @@ p {
     font-family: "Caveat";
     font-size: 20pt;
     box-shadow: 3px 27px 26px rgba(0, 0, 0, 0.3);
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+  .create {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    max-width: 980px;
+  }
+  .create .formHolder {
+    max-width: 980px;
+    margin: 0;
+    margin-top: 40px;
+    position: relative;
+  }
+  .create .formHolder h1 {
+    font-family: "Caveat Bold";
+    font-size: 25pt;
+  }
+  .create .formHolder .steps {
+    position: relative;
+    margin-bottom: 50px;
+    font-family: "Lato";
+  }
+  .create .formHolder .steps .addimage {
+    display: flex;
+  }
+  .create .formHolder .steps .addimage .step0 {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  .create .formHolder .steps .addimage #step0 {
+    border-radius: 25px;
+    background-color: #EFA7A7;
+    border-style: none;
+  }
+  .create .formHolder .ingred {
+    position: relative;
+    margin-bottom: 50px;
+    font-family: "Lato";
+  }
+  .create .formHolder .ingred h3 {
+    font-size: 20pt;
+  }
+  .create .formHolder .instructions {
+    position: relative;
+    margin-bottom: 50px;
+    font-family: "Lato";
+  }
+  .create .formHolder .instructions h3 {
+    font-size: 20pt;
+  }
+  .create .formHolder input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  .create .formHolder .addbtn {
+    max-width: 38px;
+    max-height: 38px;
+    background-color: #EFA7A7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+  .create .formHolder .addbtn p {
+    margin: 5px;
+    user-select: none;
+    font-size: 20pt;
+    font-family: "GilSans Light";
+  }
+  .create .formHolder #submitBtn {
+    background-color: #EFA7A7;
+    color: #000;
+    border-radius: 25px;
+    border-style: none;
+    font-family: "Caveat";
+    font-size: 25pt;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .create {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    max-width: 980px;
+  }
+  .create .formHolder {
+    max-width: 980px;
+    margin: 0;
+    margin-top: 40px;
+    position: relative;
+  }
+  .create .formHolder h1 {
+    font-family: "Caveat Bold";
+    font-size: 25pt;
+  }
+  .create .formHolder .steps {
+    position: relative;
+    margin-bottom: 50px;
+    font-family: "Lato";
+  }
+  .create .formHolder .steps .addimage {
+    display: flex;
+  }
+  .create .formHolder .steps .addimage .step0 {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  .create .formHolder .steps .addimage #step0 {
+    border-radius: 25px;
+    background-color: #EFA7A7;
+    border-style: none;
+  }
+  .create .formHolder .ingred {
+    position: relative;
+    margin-bottom: 50px;
+    font-family: "Lato";
+  }
+  .create .formHolder .ingred h3 {
+    font-size: 20pt;
+  }
+  .create .formHolder .instructions {
+    position: relative;
+    margin-bottom: 50px;
+    font-family: "Lato";
+  }
+  .create .formHolder .instructions h3 {
+    font-size: 20pt;
+  }
+  .create .formHolder input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  .create .formHolder .addbtn {
+    max-width: 38px;
+    max-height: 38px;
+    background-color: #EFA7A7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+  .create .formHolder .addbtn p {
+    margin: 5px;
+    user-select: none;
+    font-size: 20pt;
+    font-family: "GilSans Light";
+  }
+  .create .formHolder #submitBtn {
+    background-color: #EFA7A7;
+    color: #000;
+    border-radius: 25px;
+    border-style: none;
+    font-family: "Caveat";
+    font-size: 25pt;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .create {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    max-width: 980px;
+  }
+  .create .formHolder {
+    max-width: 980px;
+    margin: 0;
+    margin-top: 40px;
+    position: relative;
+  }
+  .create .formHolder h1 {
+    font-family: "Caveat Bold";
+    font-size: 25pt;
+  }
+  .create .formHolder .steps {
+    position: relative;
+    margin-bottom: 50px;
+    font-family: "Lato";
+  }
+  .create .formHolder .steps .addimage {
+    display: flex;
+  }
+  .create .formHolder .steps .addimage .step0 {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  .create .formHolder .steps .addimage #step0 {
+    border-radius: 25px;
+    background-color: #EFA7A7;
+    border-style: none;
+  }
+  .create .formHolder .ingred {
+    position: relative;
+    margin-bottom: 50px;
+    font-family: "Lato";
+  }
+  .create .formHolder .ingred h3 {
+    font-size: 20pt;
+  }
+  .create .formHolder .instructions {
+    position: relative;
+    margin-bottom: 50px;
+    font-family: "Lato";
+  }
+  .create .formHolder .instructions h3 {
+    font-size: 20pt;
+  }
+  .create .formHolder input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  .create .formHolder .addbtn {
+    max-width: 38px;
+    max-height: 38px;
+    background-color: #EFA7A7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+  .create .formHolder .addbtn p {
+    margin: 5px;
+    user-select: none;
+    font-size: 20pt;
+    font-family: "GilSans Light";
+  }
+  .create .formHolder #submitBtn {
+    background-color: #EFA7A7;
+    color: #000;
+    border-radius: 25px;
+    border-style: none;
+    font-family: "Caveat";
+    font-size: 25pt;
   }
 }
 .create {

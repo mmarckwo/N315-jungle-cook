@@ -1,68 +1,284 @@
-.pizzarecipe {
-    .row{
-        .col{
-            display: flex;
-            .pza {
-                width: 468px;
-                height: 421px;
+// DESK
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+    .pizzarecipe {
+        .row{
+            .col{
+                display: flex;
+                .pza {
+                    width: 468px;
+                    height: 421px;
+                }
+    
+                .desc {
+                    h2 {
+                        font-family: 'Lato Black';
+                        font-size: 25pt;
+                    }
+    
+                    p {
+                        font-family: 'Caveat';
+                        font-size: 20pt;
+                    }
+                }
+    
             }
-
-            .desc {
-                h2 {
+    
+            .col {
+                .ingredient {
+                    h2 {
                     font-family: 'Lato Black';
                     font-size: 25pt;
+                    }
+    
+                    li {
+                        list-style: none;
+                        font-family: 'Caveat';
+                        font-size: 20pt;
+                    }
+    
                 }
-
-                p {
+    
+            }
+    
+            .col {
+                .instructions {
+                    h2{
+                        font-family: 'Lato Black';
+                        font-size: 25pt;
+                    }
+    
+                    li {
+                        list-style: none;
+                    }
+                }
+            }
+    
+            button {
+                width: 128px;
+                height: 42px;
+                background-color: #FFD972;
+                border-style: none;
+                border-radius: 25px;
+    
+                a {
+                    text-decoration: none;
                     font-family: 'Caveat';
                     font-size: 20pt;
                 }
-            }
-
-        }
-
-        .col {
-            .ingredient {
-                h2 {
-                font-family: 'Lato Black';
-                font-size: 25pt;
-                }
-
-                li {
-                    list-style: none;
-                    font-family: 'Caveat';
-                    font-size: 20pt;
-                }
-
-            }
-
-        }
-
-        .col {
-            .instructions {
-                h2{
-                    font-family: 'Lato Black';
-                    font-size: 25pt;
-                }
-
-                li {
-                    list-style: none;
-                }
-            }
-        }
-
-        button {
-            width: 128px;
-            height: 42px;
-            background-color: #FFD972;
-            border-style: none;
-            border-radius: 25px;
-
-            a {
-                text-decoration: none;
-                font-family: 'Caveat';
-                font-size: 20pt;
             }
         }
     }
 }
+
+// TAB
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .pizzarecipe {
+        .row{
+            .col{
+                display: flex;
+                .pza {
+                    width: 468px;
+                    height: 421px;
+                }
+    
+                .desc {
+                    h2 {
+                        font-family: 'Lato Black';
+                        font-size: 25pt;
+                    }
+    
+                    p {
+                        font-family: 'Caveat';
+                        font-size: 20pt;
+                    }
+                }
+    
+            }
+    
+            .col {
+                .ingredient {
+                    h2 {
+                    font-family: 'Lato Black';
+                    font-size: 25pt;
+                    }
+    
+                    li {
+                        list-style: none;
+                        font-family: 'Caveat';
+                        font-size: 20pt;
+                    }
+    
+                }
+    
+            }
+    
+            .col {
+                .instructions {
+                    h2{
+                        font-family: 'Lato Black';
+                        font-size: 25pt;
+                    }
+    
+                    li {
+                        list-style: none;
+                    }
+                }
+            }
+    
+            button {
+                width: 128px;
+                height: 42px;
+                background-color: #FFD972;
+                border-style: none;
+                border-radius: 25px;
+    
+                a {
+                    text-decoration: none;
+                    font-family: 'Caveat';
+                    font-size: 20pt;
+                }
+            }
+        }
+    }
+}
+
+// MOB
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .pizzarecipe {
+        .row{
+            .col{
+                display: flex;
+                .pza {
+                    width: 468px;
+                    height: 421px;
+                }
+    
+                .desc {
+                    h2 {
+                        font-family: 'Lato Black';
+                        font-size: 25pt;
+                    }
+    
+                    p {
+                        font-family: 'Caveat';
+                        font-size: 20pt;
+                    }
+                }
+    
+            }
+    
+            .col {
+                .ingredient {
+                    h2 {
+                    font-family: 'Lato Black';
+                    font-size: 25pt;
+                    }
+    
+                    li {
+                        list-style: none;
+                        font-family: 'Caveat';
+                        font-size: 20pt;
+                    }
+    
+                }
+    
+            }
+    
+            .col {
+                .instructions {
+                    h2{
+                        font-family: 'Lato Black';
+                        font-size: 25pt;
+                    }
+    
+                    li {
+                        list-style: none;
+                    }
+                }
+            }
+    
+            button {
+                width: 128px;
+                height: 42px;
+                background-color: #FFD972;
+                border-style: none;
+                border-radius: 25px;
+    
+                a {
+                    text-decoration: none;
+                    font-family: 'Caveat';
+                    font-size: 20pt;
+                }
+            }
+        }
+    }
+}
+
+// .pizzarecipe {
+//     .row{
+//         .col{
+//             display: flex;
+//             .pza {
+//                 width: 468px;
+//                 height: 421px;
+//             }
+
+//             .desc {
+//                 h2 {
+//                     font-family: 'Lato Black';
+//                     font-size: 25pt;
+//                 }
+
+//                 p {
+//                     font-family: 'Caveat';
+//                     font-size: 20pt;
+//                 }
+//             }
+
+//         }
+
+//         .col {
+//             .ingredient {
+//                 h2 {
+//                 font-family: 'Lato Black';
+//                 font-size: 25pt;
+//                 }
+
+//                 li {
+//                     list-style: none;
+//                     font-family: 'Caveat';
+//                     font-size: 20pt;
+//                 }
+
+//             }
+
+//         }
+
+//         .col {
+//             .instructions {
+//                 h2{
+//                     font-family: 'Lato Black';
+//                     font-size: 25pt;
+//                 }
+
+//                 li {
+//                     list-style: none;
+//                 }
+//             }
+//         }
+
+//         button {
+//             width: 128px;
+//             height: 42px;
+//             background-color: #FFD972;
+//             border-style: none;
+//             border-radius: 25px;
+
+//             a {
+//                 text-decoration: none;
+//                 font-family: 'Caveat';
+//                 font-size: 20pt;
+//             }
+//         }
+//     }
+// }
