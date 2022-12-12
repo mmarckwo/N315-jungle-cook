@@ -24,9 +24,11 @@ function route() {
       MODEL.changePage(pageID, subPageID, loginListeners);
     } else if (pageID == "home") {
       MODEL.changePage(pageID, subPageID);
-    } else if ((pageID = "yourrecipes")) {
-      if (subPageID) {
+    } else if (pageID == "yourrecipes") {
+      if (subPageID == "viewrecipe") {
         MODEL.changePage(pageID, subPageID, customRecipeListeners);
+      } else if (subPageID == "editrecipe") {
+        MODEL.changePage(pageID, subPageID, editRecipeListeners);
       } else {
         MODEL.changePage(pageID, subPageID, yourRecipesListeners);
       }
@@ -136,6 +138,9 @@ function createRecipeListeners() {
 }
 
 function editRecipeListeners() {
+  var recipe = MODEL.getRecipeList()[MODEL.getViewingRecipe()];
+  console.log(recipe);
+
   // default number of fields for both is 3.
   var stepCount = 3;
   var ingredientCount = 3;
@@ -257,6 +262,11 @@ function customRecipeListeners() {
   $(".instructions li").html("");
   $.each(recipe.customSteps, function (i, step) {
     $(".instructions li").append(`<ul>${step}</ul>`);
+  });
+
+  // edit button listener.
+  $("button").on("click", (e) => {
+    console.log("hi");
   });
 }
 
