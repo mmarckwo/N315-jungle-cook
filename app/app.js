@@ -64,6 +64,9 @@ function loginListeners() {
 }
 
 function createRecipeListeners() {
+  // insert user's name into h1.
+  $("h1").html(`Hey ${MODEL.getUserInfo().firstName}, create your recipe!`);
+
   // default number of fields.
   var stepCount = 5;
   var ingredientCount = 3;
@@ -100,16 +103,22 @@ function createRecipeListeners() {
     e.preventDefault();
 
     // add to recipe json when done.
+    var recipe = {
+      steps: [],
+      ingredients: [],
+    };
 
     for (let i = 1; i < stepCount; i++) {
-      let test = $(`#step${i}`).val();
-      console.log(test);
+      let step = $(`#step${i}`).val();
+      recipe.steps.push(step);
     }
 
     for (let i = 0; i < ingredientCount; i++) {
-      let test = $(`#ingred${i}`).val();
-      console.log(test);
+      let ingredient = $(`#ingred${i}`).val();
+      recipe.ingredients.push(ingredient);
     }
+
+    MODEL.addToRecipeList(recipe);
   });
 }
 

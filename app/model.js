@@ -1,4 +1,5 @@
 var userInfo = {};
+var recipeList = [];
 
 export function changePage(pageID, subPageID, callback) {
   if (pageID == "" || pageID == "home") {
@@ -32,4 +33,13 @@ export function setUserInfo(userData) {
 
 export function getUserInfo() {
   return userInfo;
+}
+
+export function getRecipeList() {
+  return recipeList;
+}
+
+export function addToRecipeList(recipe) {
+  recipeList.push(recipe);
+  console.log(recipeList);
 }
