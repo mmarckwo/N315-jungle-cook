@@ -138,13 +138,16 @@ function createRecipeListeners() {
 }
 
 function editRecipeListeners() {
+  // get the current recipe.
   var recipe = MODEL.getRecipeList()[MODEL.getViewingRecipe()];
   console.log(recipe);
 
-  // default number of fields for both is 3.
-  var stepCount = 3;
+  // insert user's name into h1.
+  $("h1").html(`Hey ${MODEL.getUserInfo().firstName}, edit your recipe!`);
+
+  // default number of fields.
+  var stepCount = 5;
   var ingredientCount = 3;
-  var instructionCount = 3;
 
   $("#addStep").on("click", (e) => {
     e.preventDefault();
@@ -177,22 +180,30 @@ function editRecipeListeners() {
   $("#submitBtn").on("click", (e) => {
     e.preventDefault();
 
-    // add to recipe json when done.
+    // update to recipe json when done.
+    var recipe = {
+      steps: [],
+      customSteps: [],
+      ingredients: [],
+    };
 
-    for (let i = 0; i < stepCount; i++) {
-      let test = $(`#step${i}`).val();
-      // console.log(test);
+    for (let i = 1; i < stepCount; i++) {
+      let step = $(`#step${i}`).val();
+      if (i >= 5) {
+        recipe.customSteps.push(step);
+      } else {
+        recipe.steps.push(step);
+      }
     }
 
     for (let i = 0; i < ingredientCount; i++) {
-      let test = $(`#ingred${i}`).val();
-      // console.log(test);
+      let ingredient = $(`#ingred${i}`).val();
+      recipe.ingredients.push(ingredient);
     }
 
-    for (let i = 0; i < instructionCount; i++) {
-      let test = $(`#inst${i}`).val();
-      // console.log(test);
-    }
+    MODEL.updateRecipe(recipe);
+    // send the user to view their newly-updated recipe.
+    window.location.hash = "yourrecipes";
   });
 }
 

@@ -55,3 +55,7 @@ export function getViewingRecipe() {
 export function setViewingRecipe(recipeID) {
   viewingRecipe = recipeID;
 }
+
+export function updateRecipe(recipe) {
+  recipeList[viewingRecipe] = recipe;
+}
