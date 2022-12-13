@@ -1,381 +1,44 @@
 // DESK
-@media screen and (min-width: 1280px) and (max-width: 1920px){
-.browse {
-  height: 100vh;
-  .hero {
-    width: 100vw;
-    height: 100vh;
-    background-color: #a7e8bd;
-    // z-index: -1;
-    // position: fixed;
-    // bottom: 0;
-    // right: 0;
-
-    .heroimg {
-      img {
-        width: 100vw;
-        opacity: 30%;
-      }
-    }
-  }
-
-  .content {
-    // position: absolute;
-    justify-content: center;
-    align-items: center;
-    margin: 75px;
-
-    .title {
-      font-family: "Caveat Bold";
-      font-size: 25pt;
-      margin-left: 115px;
-      margin-bottom: 50px;
-    }
-
-    .row {
-      .col {
-        display: flex;
-        margin: 20px;
-        justify-content: space-evenly;
-
-        .pizza {
-          display: flex;
-          .pizzaimage {
-            width: 300px;
-            height: 265px;
-            background-image: url(../img/recipe-pizza.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: repeat;
-            border-radius: 26px;
-            overflow: hidden;
-          }
-
-          .card {
-            width: 225px;
-            height: 265px;
-            align-items: center;
-            background-color: #fff;
-            border-radius: 26px;
-
-            .cardcontent {
-              padding: 25px;
-              justify-content: space-evenly;
-
-              h1 {
-                font-family: "Lato Black";
-                font-size: 15pt;
-                text-align: center;
-                text-decoration: underline;
-              }
-              p {
-                font-family: "Lato";
-                font-size: 8pt;
-                letter-spacing: 0.5pt;
-              }
-
-              .info {
-                .info1 {
-                  display: flex;
-                  justify-content: space-evenly;
-                  align-items: center;
-                  padding: 10px;
-
-                  .time {
-                    width: 23px;
-                    height: 23px;
-                  }
-                  p {
-                    text-align: center;
-                  }
-                }
-
-                .info2 {
-                  display: flex;
-                  justify-content: space-evenly;
-                  align-items: center;
-                  padding: 15px;
-
-                  .yield {
-                    width: 23px;
-                    height: 23px;
-                  }
-                  p {
-                    text-align: center;
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .burger {
-          display: flex;
-          .burgerimage {
-            width: 300px;
-            height: 265px;
-            background-image: url(../img/recipe-burger.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: repeat;
-            border-radius: 26px;
-            overflow: hidden;
-          }
-
-          .card {
-            width: 225px;
-            height: 265px;
-            align-items: center;
-            background-color: #fff;
-            border-radius: 26px;
-
-            .cardcontent {
-              padding: 25px;
-              justify-content: space-evenly;
-
-              h1 {
-                font-family: "Lato Black";
-                font-size: 15pt;
-                text-align: center;
-                text-decoration: underline;
-              }
-              p {
-                font-family: "Lato";
-                font-size: 8pt;
-                letter-spacing: 0.5pt;
-              }
-
-              .info {
-                .info1 {
-                  display: flex;
-                  justify-content: space-evenly;
-                  align-items: center;
-                  padding: 10px;
-
-                  .time {
-                    width: 23px;
-                    height: 23px;
-                  }
-                  p {
-                    text-align: center;
-                  }
-                }
-
-                .info2 {
-                  display: flex;
-                  justify-content: space-evenly;
-                  align-items: center;
-                  padding: 15px;
-
-                  .yield {
-                    width: 23px;
-                    height: 23px;
-                  }
-                  p {
-                    text-align: center;
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .biryani {
-          .byraniimage {
-            width: 300px;
-            height: 265px;
-            background-image: url(../img/recipe-pilaf.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: repeat;
-            border-radius: 26px;
-            overflow: hidden;
-          }
-          display: flex;
-          img {
-            width: 300px;
-            height: 265px;
-            // background-repeat: repeat;
-            border-radius: 26px;
-          }
-
-          .card {
-            width: 225px;
-            height: 265px;
-            align-items: center;
-            background-color: #fff;
-            border-radius: 26px;
-
-            .cardcontent {
-              padding: 25px;
-              justify-content: space-evenly;
-
-              h1 {
-                font-family: "Lato Black";
-                font-size: 15pt;
-                text-align: center;
-                text-decoration: underline;
-              }
-              p {
-                font-family: "Lato";
-                font-size: 8pt;
-                letter-spacing: 0.5pt;
-              }
-
-              .info {
-                .info1 {
-                  display: flex;
-                  justify-content: space-evenly;
-                  align-items: center;
-                  padding: 10px;
-
-                  .time {
-                    width: 23px;
-                    height: 23px;
-                  }
-                  p {
-                    text-align: center;
-                  }
-                }
-
-                .info2 {
-                  display: flex;
-                  justify-content: space-evenly;
-                  align-items: center;
-                  padding: 15px;
-
-                  .yield {
-                    width: 23px;
-                    height: 23px;
-                  }
-                  p {
-                    text-align: center;
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .chowmein {
-          display: flex;
-          .meinimage {
-            width: 300px;
-            height: 265px;
-            background-image: url(../img/recipe-chowmein.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: repeat;
-            border-radius: 26px;
-            overflow: hidden;
-          }
-
-          .card {
-            width: 225px;
-            height: 265px;
-            align-items: center;
-            background-color: #fff;
-            border-radius: 26px;
-
-            .cardcontent {
-              padding: 25px;
-              justify-content: space-evenly;
-
-              h1 {
-                font-family: "Lato Black";
-                font-size: 15pt;
-                text-align: center;
-                text-decoration: underline;
-              }
-              p {
-                font-family: "Lato";
-                font-size: 8pt;
-                letter-spacing: 0.5pt;
-              }
-
-              .info {
-                .info1 {
-                  display: flex;
-                  justify-content: space-evenly;
-                  align-items: center;
-                  padding: 10px;
-
-                  .time {
-                    width: 23px;
-                    height: 23px;
-                  }
-                  p {
-                    text-align: center;
-                  }
-                }
-
-                .info2 {
-                  display: flex;
-                  justify-content: space-evenly;
-                  align-items: center;
-                  padding: 15px;
-
-                  .yield {
-                    width: 23px;
-                    height: 23px;
-                  }
-                  p {
-                    text-align: center;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-}
-
-// TAB
-@media screen and (min-width: 768px) and (max-width: 1279px){
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
   .browse {
-    height: 1600vh;
+    // height: 100vh;
     .hero {
-      width: 768vw;
-      height: 1600vh;
+      width: 100vw;
+      height: 100vh;
       background-color: #a7e8bd;
       // z-index: -1;
       // position: fixed;
       // bottom: 0;
       // right: 0;
-  
+
       .heroimg {
         img {
-          width: 768vw;
+          width: 100vw;
           opacity: 30%;
         }
       }
     }
-  
+      .title {
+        font-family: "Caveat Bold";
+      }
     .content {
       // position: absolute;
       justify-content: center;
       align-items: center;
-      margin: 75px;
-  
-      .title {
-        font-family: "Caveat Bold";
-        font-size: 25pt;
-        margin-left: 105px;
-        margin-bottom: 50px;
-      }
-  
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+
       .row {
         .col {
-          // display: flex;
-          margin: 20px;
+          display: flex;
           justify-content: space-evenly;
-  
+
           .pizza {
-            display: flex;
+            display: flex;        margin: 20px;
+
             .pizzaimage {
               width: 300px;
               height: 265px;
@@ -386,18 +49,18 @@
               border-radius: 26px;
               overflow: hidden;
             }
-  
+
             .card {
               width: 225px;
               height: 265px;
               align-items: center;
               background-color: #fff;
               border-radius: 26px;
-  
+
               .cardcontent {
                 padding: 25px;
                 justify-content: space-evenly;
-  
+
                 h1 {
                   font-family: "Lato Black";
                   font-size: 15pt;
@@ -409,14 +72,14 @@
                   font-size: 8pt;
                   letter-spacing: 0.5pt;
                 }
-  
+
                 .info {
                   .info1 {
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
                     padding: 10px;
-  
+
                     .time {
                       width: 23px;
                       height: 23px;
@@ -425,13 +88,13 @@
                       text-align: center;
                     }
                   }
-  
+
                   .info2 {
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
                     padding: 15px;
-  
+
                     .yield {
                       width: 23px;
                       height: 23px;
@@ -444,9 +107,10 @@
               }
             }
           }
-  
+
           .burger {
-            display: flex;
+            display: flex;        margin: 20px;
+
             .burgerimage {
               width: 300px;
               height: 265px;
@@ -457,18 +121,18 @@
               border-radius: 26px;
               overflow: hidden;
             }
-  
+
             .card {
               width: 225px;
               height: 265px;
               align-items: center;
               background-color: #fff;
               border-radius: 26px;
-  
+
               .cardcontent {
                 padding: 25px;
                 justify-content: space-evenly;
-  
+
                 h1 {
                   font-family: "Lato Black";
                   font-size: 15pt;
@@ -480,14 +144,14 @@
                   font-size: 8pt;
                   letter-spacing: 0.5pt;
                 }
-  
+
                 .info {
                   .info1 {
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
                     padding: 10px;
-  
+
                     .time {
                       width: 23px;
                       height: 23px;
@@ -496,13 +160,13 @@
                       text-align: center;
                     }
                   }
-  
+
                   .info2 {
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
                     padding: 15px;
-  
+
                     .yield {
                       width: 23px;
                       height: 23px;
@@ -515,7 +179,7 @@
               }
             }
           }
-  
+
           .biryani {
             .byraniimage {
               width: 300px;
@@ -534,18 +198,18 @@
               // background-repeat: repeat;
               border-radius: 26px;
             }
-  
+
             .card {
               width: 225px;
               height: 265px;
               align-items: center;
               background-color: #fff;
               border-radius: 26px;
-  
+
               .cardcontent {
                 padding: 25px;
                 justify-content: space-evenly;
-  
+
                 h1 {
                   font-family: "Lato Black";
                   font-size: 15pt;
@@ -557,14 +221,14 @@
                   font-size: 8pt;
                   letter-spacing: 0.5pt;
                 }
-  
+
                 .info {
                   .info1 {
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
                     padding: 10px;
-  
+
                     .time {
                       width: 23px;
                       height: 23px;
@@ -573,13 +237,13 @@
                       text-align: center;
                     }
                   }
-  
+
                   .info2 {
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
                     padding: 15px;
-  
+
                     .yield {
                       width: 23px;
                       height: 23px;
@@ -592,7 +256,7 @@
               }
             }
           }
-  
+
           .chowmein {
             display: flex;
             .meinimage {
@@ -605,18 +269,18 @@
               border-radius: 26px;
               overflow: hidden;
             }
-  
+
             .card {
               width: 225px;
               height: 265px;
               align-items: center;
               background-color: #fff;
               border-radius: 26px;
-  
+
               .cardcontent {
                 padding: 25px;
                 justify-content: space-evenly;
-  
+
                 h1 {
                   font-family: "Lato Black";
                   font-size: 15pt;
@@ -628,14 +292,14 @@
                   font-size: 8pt;
                   letter-spacing: 0.5pt;
                 }
-  
+
                 .info {
                   .info1 {
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
                     padding: 10px;
-  
+
                     .time {
                       width: 23px;
                       height: 23px;
@@ -644,13 +308,13 @@
                       text-align: center;
                     }
                   }
-  
+
                   .info2 {
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
                     padding: 15px;
-  
+
                     .yield {
                       width: 23px;
                       height: 23px;
@@ -667,342 +331,678 @@
       }
     }
   }
-  
-  }
+}
 
-// MOB
-@media screen and (min-width: 360px) and (max-width: 767px) {
-    .browse {
-      height: 1800vh;
-      .hero {
-        width: 360vw;
-        height: 1800vh;
-        background-color: #a7e8bd;
-        // z-index: -1;
-        // position: fixed;
-        // bottom: 0;
-        // right: 0;
-    
-        .heroimg {
-          img {
-            width: 360vw;
-            opacity: 30%;
-          }
-        }
-      }
-    
-      .content {
-        // position: absolute;
-        justify-content: center;
-        align-items: center;
-        margin: 75px;
-    
-        .title {
-          font-family: "Caveat Bold";
-          font-size: 20pt;
-          margin-left: 115px;
-          margin-bottom: 50px;
-        }
-    
-        .row {
-          .col {
-            // display: flex;
-            margin: 20px;
-            justify-content: space-evenly;
-    
-            .pizza {
-              // display: flex;
-              .pizzaimage {
-                width: 300px;
-                height: 150px;
-                background-image: url(../img/recipe-pizza.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: repeat;
-                border-radius: 26px;
-                overflow: hidden;
-              }
-    
-              .card {
-                width: 300px;
-                height: 170px;
-                align-items: center;
-                background-color: #fff;
-                border-radius: 26px;
-    
-                .cardcontent {
-                  padding: 25px;
-                  justify-content: space-evenly;
-    
-                  h1 {
-                    font-family: "Lato Black";
-                    font-size: 10pt;
-                    text-align: center;
-                    text-decoration: underline;
-                  }
-                  p {
-                    font-family: "Lato";
-                    font-size: 8pt;
-                    letter-spacing: 0.5pt;
-                  }
-    
-                  .info {
-                    .info1 {
-                      // display: flex;
-                      justify-content: space-evenly;
-                      align-items: center;
-                      padding: 10px;
-    
-                      .time {
-                        width: 7px;
-                        height: 7px;
-                      }
-                      p {
-                        text-align: center;
-                      }
-                    }
-    
-                    .info2 {
-                      display: flex;
-                      justify-content: space-evenly;
-                      align-items: center;
-                      padding: 15px;
-    
-                      .yield {
-                        width: 7px;
-                        height: 7px;
-                      }
-                      p {
-                        text-align: center;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-    
-            .burger {
-              // display: flex;
-              .burgerimage {
-                width: 300px;
-                height: 150px;
-                background-image: url(../img/recipe-burger.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: repeat;
-                border-radius: 26px;
-                overflow: hidden;
-              }
-    
-              .card {
-                width: 300px;
-                height: 170px;
-                align-items: center;
-                background-color: #fff;
-                border-radius: 26px;
-    
-                .cardcontent {
-                  padding: 25px;
-                  justify-content: space-evenly;
-    
-                  h1 {
-                    font-family: "Lato Black";
-                    font-size: 10pt;
-                    text-align: center;
-                    text-decoration: underline;
-                  }
-                  p {
-                    font-family: "Lato";
-                    font-size: 8pt;
-                    letter-spacing: 0.5pt;
-                  }
-    
-                  .info {
-                    .info1 {
-                      // display: flex;
-                      justify-content: space-evenly;
-                      align-items: center;
-                      padding: 10px;
-    
-                      .time {
-                        width: 23px;
-                        height: 23px;
-                      }
-                      p {
-                        text-align: center;
-                      }
-                    }
-    
-                    .info2 {
-                      display: flex;
-                      justify-content: space-evenly;
-                      align-items: center;
-                      padding: 15px;
-    
-                      .yield {
-                        width: 23px;
-                        height: 23px;
-                      }
-                      p {
-                        text-align: center;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-    
-            .biryani {
-              .byraniimage {
-                width: 300px;
-                height: 150px;
-                background-image: url(../img/recipe-pilaf.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: repeat;
-                border-radius: 26px;
-                overflow: hidden;
-              }
-              // display: flex;
-              img {
-                width: 300px;
-                height: 150px;
-                // background-repeat: repeat;
-                border-radius: 26px;
-              }
-    
-              .card {
-                width: 300px;
-                height: 170px;
-                align-items: center;
-                background-color: #fff;
-                border-radius: 26px;
-    
-                .cardcontent {
-                  padding: 25px;
-                  justify-content: space-evenly;
-    
-                  h1 {
-                    font-family: "Lato Black";
-                    font-size: 10pt;
-                    text-align: center;
-                    text-decoration: underline;
-                  }
-                  p {
-                    font-family: "Lato";
-                    font-size: 8pt;
-                    letter-spacing: 0.5pt;
-                  }
-    
-                  .info {
-                    .info1 {
-                      // display: flex;
-                      justify-content: space-evenly;
-                      align-items: center;
-                      padding: 10px;
-    
-                      .time {
-                        width: 23px;
-                        height: 23px;
-                      }
-                      p {
-                        text-align: center;
-                      }
-                    }
-    
-                    .info2 {
-                      display: flex;
-                      justify-content: space-evenly;
-                      align-items: center;
-                      padding: 15px;
-    
-                      .yield {
-                        width: 23px;
-                        height: 23px;
-                      }
-                      p {
-                        text-align: center;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-    
-            .chowmein {
-              // display: flex;
-              .meinimage {
-                width: 300px;
-                height: 150px;
-                background-image: url(../img/recipe-chowmein.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: repeat;
-                border-radius: 26px;
-                overflow: hidden;
-              }
-    
-              .card {
-                width: 300px;
-                height: 170px;
-                align-items: center;
-                background-color: #fff;
-                border-radius: 26px;
-    
-                .cardcontent {
-                  padding: 25px;
-                  justify-content: space-evenly;
-    
-                  h1 {
-                    font-family: "Lato Black";
-                    font-size: 10pt;
-                    text-align: center;
-                    text-decoration: underline;
-                  }
-                  p {
-                    font-family: "Lato";
-                    font-size: 8pt;
-                    letter-spacing: 0.5pt;
-                  }
-    
-                  .info {
-                    .info1 {
-                      // display: flex;
-                      justify-content: space-evenly;
-                      align-items: center;
-                      padding: 10px;
-    
-                      .time {
-                        width: 23px;
-                        height: 23px;
-                      }
-                      p {
-                        text-align: center;
-                      }
-                    }
-    
-                    .info2 {
-                      display: flex;
-                      justify-content: space-evenly;
-                      align-items: center;
-                      padding: 15px;
-    
-                      .yield {
-                        width: 23px;
-                        height: 23px;
-                      }
-                      p {
-                        text-align: center;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    
-    }
-    
+// // TAB
+// @media screen and (min-width: 768px) and (max-width: 1279px) {
+//   .browse {
+//     .hero {
+//       // width: 100vw;
+//       height: 100vh;
+//       background-color: #a7e8bd;
+//       z-index: -1;
+//       position: absolute;
+//       // position: fixed;
+//       // bottom: 0;
+//       // right: 0;
+
+//       .heroimg {
+//         img {
+//           // width: 100vw;
+//           height: 100vh;
+//           opacity: 30%;
+//         }
+//       }
+//     }
+//     .title {
+//       font-family: "Caveat Bold";
+//       font-size: 18pt;
+//       margin: 0px;
+//       // position: absolute;
+
+//     }
+//     .content {
+//       display: flex;
+//       text-align: center;
+//       justify-content: center;
+//       align-items: center;
+//       position: relative;
+
+//       .row {
+//         // position: absolute;
+//         // top: 75%;
+//         // left: 50%;
+//         // transform: translate(-50%, -50%);
+//         // display:flex;
+//         text-align: center;
+//         justify-content: center;
+//         align-items: center;
+//         .col {
+//           // display: flex;
+//           margin: 20px;
+//           justify-content: space-evenly;
+
+//           .pizza {
+//             display: flex;
+//             .pizzaimage {
+//               width: 300px;
+//               height: 265px;
+//               background-image: url(../img/recipe-pizza.jpg);
+//               background-size: cover;
+//               background-position: center;
+//               background-repeat: repeat;
+//               border-radius: 26px;
+//               overflow: hidden;
+//             }
+
+//             .card {
+//               width: 225px;
+//               height: 265px;
+//               align-items: center;
+//               background-color: #fff;
+//               border-radius: 26px;
+
+//               .cardcontent {
+//                 padding: 20px;
+//                 justify-content: space-evenly;
+
+//                 h1 {
+//                   font-family: "Lato Black";
+//                   font-size: 12pt;
+//                   text-align: center;
+//                   text-decoration: underline;
+//                 }
+//                 p {
+//                   font-family: "Lato";
+//                   font-size: 8pt;
+//                   letter-spacing: 0.5pt;
+//                 }
+
+//                 .info {
+//                   .info1 {
+//                     display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 15px;
+
+//                     .time {
+//                       width: 23px;
+//                       height: 23px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+
+//                   .info2 {
+//                     display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 15px;
+
+//                     .yield {
+//                       width: 23px;
+//                       height: 23px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+
+//           .burger {
+//             display: flex;
+//             .burgerimage {
+//               width: 300px;
+//               height: 265px;
+//               background-image: url(../img/recipe-burger.jpg);
+//               background-size: cover;
+//               background-position: center;
+//               background-repeat: repeat;
+//               border-radius: 26px;
+//               overflow: hidden;
+//             }
+
+//             .card {
+//               width: 225px;
+//               height: 265px;
+//               align-items: center;
+//               background-color: #fff;
+//               border-radius: 26px;
+
+//               .cardcontent {
+//                 padding: 20px;
+//                 justify-content: space-evenly;
+
+//                 h1 {
+//                   font-family: "Lato Black";
+//                   font-size: 12pt;
+//                   text-align: center;
+//                   text-decoration: underline;
+//                 }
+//                 p {
+//                   font-family: "Lato";
+//                   font-size: 8pt;
+//                   letter-spacing: 0.5pt;
+//                 }
+
+//                 .info {
+//                   .info1 {
+//                     display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 10px;
+
+//                     .time {
+//                       width: 23px;
+//                       height: 23px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+
+//                   .info2 {
+//                     display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 15px;
+
+//                     .yield {
+//                       width: 23px;
+//                       height: 23px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+
+//           .biryani {
+//             display: flex;
+
+//             .byraniimage {
+//               width: 300px;
+//               height: 265px;
+//               background-image: url(../img/recipe-pilaf.jpg);
+//               background-size: cover;
+//               background-position: center;
+//               background-repeat: repeat;
+//               border-radius: 26px;
+//               overflow: hidden;
+//             }
+
+//             .card {
+//               width: 225px;
+//               height: 265px;
+//               align-items: center;
+//               background-color: #fff;
+//               border-radius: 26px;
+
+//               .cardcontent {
+//                 padding: 20px;
+//                 justify-content: space-evenly;
+
+//                 h1 {
+//                   font-family: "Lato Black";
+//                   font-size: 12pt;
+//                   text-align: center;
+//                   text-decoration: underline;
+//                 }
+//                 p {
+//                   font-family: "Lato";
+//                   font-size: 8pt;
+//                   letter-spacing: 0.5pt;
+//                 }
+
+//                 .info {
+//                   .info1 {
+//                     display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 15px;
+
+//                     .time {
+//                       width: 23px;
+//                       height: 23px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+
+//                   .info2 {
+//                     display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 15px;
+
+//                     .yield {
+//                       width: 23px;
+//                       height: 23px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+
+//           .chowmein {
+//             display: flex;
+//             .meinimage {
+//               width: 300px;
+//               height: 265px;
+//               background-image: url(../img/recipe-chowmein.jpg);
+//               background-size: cover;
+//               background-position: center;
+//               background-repeat: repeat;
+//               border-radius: 26px;
+//               overflow: hidden;
+//             }
+
+//             .card {
+//               width: 225px;
+//               height: 265px;
+//               align-items: center;
+//               background-color: #fff;
+//               border-radius: 26px;
+
+//               .cardcontent {
+//                 padding: 20px;
+//                 justify-content: space-evenly;
+
+//                 h1 {
+//                   font-family: "Lato Black";
+//                   font-size: 12pt;
+//                   text-align: center;
+//                   text-decoration: underline;
+//                 }
+//                 p {
+//                   font-family: "Lato";
+//                   font-size: 8pt;
+//                   letter-spacing: 0.5pt;
+//                 }
+
+//                 .info {
+//                   .info1 {
+//                     display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 15px;
+
+//                     .time {
+//                       width: 23px;
+//                       height: 23px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+
+//                   .info2 {
+//                     display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 15px;
+
+//                     .yield {
+//                       width: 23px;
+//                       height: 23px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // MOB
+// @media screen and (min-width: 360px) and (max-width: 767px) {
+//   .browse {
+//     height: 1800vh;
+//     .hero {
+//       width: 360vw;
+//       height: 1800vh;
+//       background-color: #a7e8bd;
+//       // z-index: -1;
+//       // position: fixed;
+//       // bottom: 0;
+//       // right: 0;
+
+//       .heroimg {
+//         img {
+//           width: 360vw;
+//           opacity: 30%;
+//         }
+//       }
+//     }
+
+//     .content {
+//       // position: absolute;
+//       justify-content: center;
+//       align-items: center;
+//       margin: 75px;
+
+//       .title {
+//         font-family: "Caveat Bold";
+//         font-size: 20pt;
+//         margin-left: 115px;
+//         margin-bottom: 50px;
+//       }
+
+//       .row {
+//         .col {
+//           // display: flex;
+//           margin: 20px;
+//           justify-content: space-evenly;
+
+//           .pizza {
+//             // display: flex;
+//             .pizzaimage {
+//               width: 300px;
+//               height: 150px;
+//               background-image: url(../img/recipe-pizza.jpg);
+//               background-size: cover;
+//               background-position: center;
+//               background-repeat: repeat;
+//               border-radius: 26px;
+//               overflow: hidden;
+//             }
+
+//             .card {
+//               width: 300px;
+//               height: 170px;
+//               align-items: center;
+//               background-color: #fff;
+//               border-radius: 26px;
+
+//               .cardcontent {
+//                 padding: 25px;
+//                 justify-content: space-evenly;
+
+//                 h1 {
+//                   font-family: "Lato Black";
+//                   font-size: 10pt;
+//                   text-align: center;
+//                   text-decoration: underline;
+//                 }
+//                 p {
+//                   font-family: "Lato";
+//                   font-size: 8pt;
+//                   letter-spacing: 0.5pt;
+//                 }
+
+//                 .info {
+//                   .info1 {
+//                     // display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 10px;
+
+//                     .time {
+//                       width: 7px;
+//                       height: 7px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+
+//                   .info2 {
+//                     display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 15px;
+
+//                     .yield {
+//                       width: 7px;
+//                       height: 7px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+
+//           .burger {
+//             // display: flex;
+//             .burgerimage {
+//               width: 300px;
+//               height: 150px;
+//               background-image: url(../img/recipe-burger.jpg);
+//               background-size: cover;
+//               background-position: center;
+//               background-repeat: repeat;
+//               border-radius: 26px;
+//               overflow: hidden;
+//             }
+
+//             .card {
+//               width: 300px;
+//               height: 170px;
+//               align-items: center;
+//               background-color: #fff;
+//               border-radius: 26px;
+
+//               .cardcontent {
+//                 padding: 25px;
+//                 justify-content: space-evenly;
+
+//                 h1 {
+//                   font-family: "Lato Black";
+//                   font-size: 10pt;
+//                   text-align: center;
+//                   text-decoration: underline;
+//                 }
+//                 p {
+//                   font-family: "Lato";
+//                   font-size: 8pt;
+//                   letter-spacing: 0.5pt;
+//                 }
+
+//                 .info {
+//                   .info1 {
+//                     // display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 10px;
+
+//                     .time {
+//                       width: 23px;
+//                       height: 23px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+
+//                   .info2 {
+//                     display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 15px;
+
+//                     .yield {
+//                       width: 23px;
+//                       height: 23px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+
+//           .biryani {
+//             .byraniimage {
+//               width: 300px;
+//               height: 150px;
+//               background-image: url(../img/recipe-pilaf.jpg);
+//               background-size: cover;
+//               background-position: center;
+//               background-repeat: repeat;
+//               border-radius: 26px;
+//               overflow: hidden;
+//             }
+//             // display: flex;
+//             img {
+//               width: 300px;
+//               height: 150px;
+//               // background-repeat: repeat;
+//               border-radius: 26px;
+//             }
+
+//             .card {
+//               width: 300px;
+//               height: 170px;
+//               align-items: center;
+//               background-color: #fff;
+//               border-radius: 26px;
+
+//               .cardcontent {
+//                 padding: 25px;
+//                 justify-content: space-evenly;
+
+//                 h1 {
+//                   font-family: "Lato Black";
+//                   font-size: 10pt;
+//                   text-align: center;
+//                   text-decoration: underline;
+//                 }
+//                 p {
+//                   font-family: "Lato";
+//                   font-size: 8pt;
+//                   letter-spacing: 0.5pt;
+//                 }
+
+//                 .info {
+//                   .info1 {
+//                     // display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 10px;
+
+//                     .time {
+//                       width: 23px;
+//                       height: 23px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+
+//                   .info2 {
+//                     display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 15px;
+
+//                     .yield {
+//                       width: 23px;
+//                       height: 23px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+
+//           .chowmein {
+//             // display: flex;
+//             .meinimage {
+//               width: 300px;
+//               height: 150px;
+//               background-image: url(../img/recipe-chowmein.jpg);
+//               background-size: cover;
+//               background-position: center;
+//               background-repeat: repeat;
+//               border-radius: 26px;
+//               overflow: hidden;
+//             }
+
+//             .card {
+//               width: 300px;
+//               height: 170px;
+//               align-items: center;
+//               background-color: #fff;
+//               border-radius: 26px;
+
+//               .cardcontent {
+//                 padding: 25px;
+//                 justify-content: space-evenly;
+
+//                 h1 {
+//                   font-family: "Lato Black";
+//                   font-size: 10pt;
+//                   text-align: center;
+//                   text-decoration: underline;
+//                 }
+//                 p {
+//                   font-family: "Lato";
+//                   font-size: 8pt;
+//                   letter-spacing: 0.5pt;
+//                 }
+
+//                 .info {
+//                   .info1 {
+//                     // display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 10px;
+
+//                     .time {
+//                       width: 23px;
+//                       height: 23px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+
+//                   .info2 {
+//                     display: flex;
+//                     justify-content: space-evenly;
+//                     align-items: center;
+//                     padding: 15px;
+
+//                     .yield {
+//                       width: 23px;
+//                       height: 23px;
+//                     }
+//                     p {
+//                       text-align: center;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

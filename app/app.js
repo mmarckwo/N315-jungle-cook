@@ -20,7 +20,7 @@ function route() {
       MODEL.changePage(pageID);
     } else if (pageID == "createrecipe") {
       if (jQuery.isEmptyObject(MODEL.getUserInfo())) {
-        alert("Please log in first to view this page.");
+        Swal.fire("Please log in first to view this page");
         return;
       }
       MODEL.changePage(pageID, subPageID, createRecipeListeners);
@@ -30,7 +30,7 @@ function route() {
       MODEL.changePage(pageID, subPageID);
     } else if (pageID == "yourrecipes") {
       if (jQuery.isEmptyObject(MODEL.getUserInfo())) {
-        alert("Please log in first to view this page.");
+        Swal.fire("Please log in first to view this page");
         return;
       }
       if (subPageID == "viewrecipe") {
@@ -55,9 +55,9 @@ function loginListeners() {
     console.log(email, password);
 
     if (jQuery.isEmptyObject(MODEL.getUserInfo())) {
-      alert("No account has been made yet. Sign up first.");
+      Swal.fire("No account has been made yet. Sign up first.");
     } else {
-      alert("You are already logged in.");
+      Swal.fire("You are already logged in.");
     }
   });
 
