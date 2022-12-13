@@ -136,22 +136,22 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   nav {
-    width: 100%;
     height: 80px;
     background-color: transparent;
     display: flex;
     font-family: "Caveat";
-    font-size: 20pt;
+    font-size: 18pt;
     justify-content: space-evenly;
     align-items: center;
   }
   nav .logo {
-    width: 137px;
-    height: 47px;
+    width: 127px;
+    height: 27px;
     align-items: left;
-    justify-content: left;
-    margin-left: 0px;
-    margin-right: 525px;
+    justify-content: center;
+    margin-bottom: 23px;
+    margin-left: 25px;
+    margin-right: 100px;
   }
   nav li, nav a {
     justify-content: space-evenly;
@@ -159,7 +159,7 @@ p {
     text-decoration: none;
     color: black;
     list-style-type: none;
-    font-size: 18pt;
+    font-size: 14pt;
   }
   nav li a:is(:link, :active, :visited).active {
     background-color: transparent;
@@ -168,10 +168,10 @@ p {
     text-underline-offset: 6px;
   }
   nav button {
-    width: 128px;
-    height: 22px;
+    width: 138px;
+    height: 52px;
     font-family: "Caveat";
-    font-size: 20pt;
+    font-size: 14pt;
     align-items: center;
     border-radius: 25px;
     border-style: none;
@@ -184,35 +184,34 @@ p {
     display: flex;
     text-decoration: none;
     color: black;
-    font-size: 18pt;
+    font-size: 14pt;
   }
 }
 @media screen and (min-width: 360px) and (max-width: 767px) {
   nav {
-    width: 100%;
-    height: 105px;
+    height: 120px;
     background-color: transparent;
     display: flex;
     font-family: "Caveat";
-    font-size: 18pt;
+    font-size: 12pt;
     justify-content: space-evenly;
     align-items: center;
   }
-  nav .logo {
-    width: 137px;
-    height: 47px;
+  nav .logo img {
+    width: 125px;
+    height: 125px;
     align-items: left;
     justify-content: left;
-    margin-left: 0px;
-    margin-right: 125px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   nav li, nav a {
     justify-content: space-evenly;
-    align-items: center;
+    align-items: right;
     text-decoration: none;
     color: black;
     list-style-type: none;
-    font-size: 16pt;
+    font-size: 9pt;
   }
   nav li a:is(:link, :active, :visited).active {
     background-color: transparent;
@@ -221,10 +220,10 @@ p {
     text-underline-offset: 5px;
   }
   nav button {
-    width: 128px;
+    width: 20px;
     height: 22px;
     font-family: "Caveat";
-    font-size: 18pt;
+    font-size: 9pt;
     align-items: center;
     border-radius: 25px;
     border-style: none;
@@ -237,7 +236,7 @@ p {
     display: flex;
     text-decoration: none;
     color: black;
-    font-size: 18pt;
+    font-size: 9pt;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1920px) {
@@ -286,90 +285,96 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   footer .footerWrap {
-    max-width: 100%;
-    max-height: 60px;
-    display: flex;
+    height: 100px;
+    display: grid;
     font-family: "Lato Italic";
     font-size: 10pt;
     letter-spacing: 1pt;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     position: relative;
-    bottom: 0;
     background-color: transparent;
     margin: 3px;
   }
   footer .footerWrap .c1 {
     display: flex;
     align-items: center;
-    color: black;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    margin-top: 10px;
   }
   footer .footerWrap .footlinks {
     justify-content: center;
+    align-items: center;
     display: flex;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin: 10px;
   }
   footer .footerWrap .footlinks a {
-    margin: 10px;
     text-decoration: none;
     color: black;
   }
   footer .footerWrap .socials {
-    justify-content: space-between;
-    width: 30px;
-    height: 30px;
+    justify-content: center;
+    align-items: center;
     display: flex;
+    height: 60px;
   }
   footer .footerWrap .socials .fb {
-    margin: 5px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
   }
   footer .footerWrap .socials .ig {
-    margin: 5px;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
   }
 }
 @media screen and (min-width: 360px) and (max-width: 767px) {
   footer .footerWrap {
-    max-width: 100%;
-    max-height: 120px;
-    display: flex;
+    height: 100px;
+    display: grid;
     font-family: "Lato Italic";
-    font-size: 10pt;
+    font-size: 8pt;
     letter-spacing: 1pt;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     position: relative;
-    bottom: 0;
     background-color: transparent;
     margin: 3px;
   }
   footer .footerWrap .c1 {
     display: flex;
     align-items: center;
-    color: black;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    margin-top: 10px;
   }
   footer .footerWrap .footlinks {
     justify-content: center;
+    align-items: center;
     display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
   }
   footer .footerWrap .footlinks a {
-    margin: 10px;
     text-decoration: none;
     color: black;
+    margin: 15px;
   }
   footer .footerWrap .socials {
-    justify-content: space-between;
-    width: 30px;
-    height: 30px;
+    justify-content: center;
+    align-items: center;
     display: flex;
+    height: 60px;
   }
   footer .footerWrap .socials .fb {
-    margin: 5px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
   }
   footer .footerWrap .socials .ig {
-    margin: 5px;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1920px) {
@@ -449,12 +454,12 @@ p {
     align-items: center;
   }
   .home .hero {
-    width: 768vw;
-    height: 1024vh;
+    height: 100vh;
     background-color: #f25c54;
+    z-index: -1;
   }
   .home .hero .heroimg img {
-    width: 768vw;
+    height: 100vh;
     opacity: 30%;
   }
   .home .bigcircle {
@@ -489,7 +494,7 @@ p {
     max-width: 168px;
     max-height: 168px;
     position: absolute;
-    top: 0%;
+    top: 20%;
     left: 50%;
     transform: translate(50%, 75%);
     z-index: -1;
@@ -518,12 +523,12 @@ p {
     align-items: center;
   }
   .home .hero {
-    width: 360vw;
-    height: 700vh;
+    height: 100vh;
     background-color: #f25c54;
+    z-index: -10;
   }
   .home .hero .heroimg img {
-    width: 360vw;
+    height: 100vh;
     opacity: 30%;
   }
   .home .bigcircle {
@@ -535,47 +540,45 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 3px 27px 26px rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .home .bigcircle .textbox {
     padding: 33px;
+    justify-content: space-evenly;
   }
   .home .bigcircle .textbox h1 {
     font-family: "Caveat Bold";
-    font-size: 18pt;
+    font-size: 20pt;
   }
   .home .bigcircle .textbox p {
     font-family: "Lato";
-    font-size: 9pt;
+    font-size: 12pt;
     letter-spacing: 1pt;
   }
   .home .smallcircle {
     border-radius: 200px;
     background-color: #fcbcb8;
-    max-width: 121px;
-    max-height: 121px;
+    width: 120px;
+    height: 120px;
     position: absolute;
-    top: 0%;
-    left: 50%;
+    top: 28%;
+    left: 45%;
     transform: translate(50%, 75%);
     z-index: -1;
-    box-shadow: 3px 27px 26px rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .home .smallcircle .textbox {
-    padding-top: 66px;
-    padding-bottom: 66px;
-    padding-right: 33px;
-    padding-left: 36px;
+    padding: 23px;
   }
   .home .smallcircle .textbox p {
     font-family: "Lato Italic";
-    font-size: 8pt;
+    font-size: 7pt;
     letter-spacing: 1pt;
   }
 }
@@ -1963,7 +1966,6 @@ p {
     height: 100vh;
   }
   .yourrecipes .hero {
-    width: 100vw;
     height: 100vh;
     background-color: #a7e8bd;
   }

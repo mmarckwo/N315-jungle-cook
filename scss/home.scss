@@ -98,17 +98,18 @@
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .home {
   .hero {
-    width: 768vw;
-    height: 1024vh;
+    // width: 768vw;
+    height: 100vh;
     background-color: #f25c54;
-    // z-index: -1;
+    z-index: -1;
     // position: fixed;
     // bottom: 0;
     // right: 0;
 
     .heroimg {
       img {
-        width: 768vw;
+        // width: 100vw;
+        height: 100vh;
         opacity: 30%;
       }
     }
@@ -161,7 +162,7 @@
         max-width: 168px;
         max-height: 168px;
         position: absolute;
-        top: 0%;
+        top: 20%;
         left: 50%;
         transform: translate(50%, 75%);
         z-index: -1;
@@ -193,96 +194,96 @@
 // MOB
 @media screen and (min-width: 360px) and (max-width: 767px) {
   .home {
-  .hero {
-    width: 360vw;
-    height: 700vh;
-    background-color: #f25c54;
-    // z-index: -1;
-    // position: fixed;
-    // bottom: 0;
-    // right: 0;
-
-    .heroimg {
-      img {
-        width: 360vw;
-        opacity: 30%;
+    .hero {
+      // width: 768vw;
+      height: 100vh;
+      background-color: #f25c54;
+      z-index: -10;
+      // position: fixed;
+      // bottom: 0;
+      // right: 0;
+  
+      .heroimg {
+        img {
+          // width: 100vw;
+          height: 100vh;
+          opacity: 30%;
+        }
       }
     }
-  }
-
-  // .centerpage {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-
-    // .circleWrapper {
-    //   position: relative;
-    //   height: 80vh;
-
-      .bigcircle {
-        border-radius: 200px;
-        background-color: #ffd972;
-        width: 258px;
-        height: 258px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: 3px 27px 26px rgba(0, 0, 0, 0.3);
-        display: flex;
-        align-items:center;
-        justify-content: center;
-
-
-        .textbox {
-          // width: 362px;
-          // height: 362px;
-          padding: 33px;
-          h1 {
-            font-family: 'Caveat Bold';
-            font-size: 18pt;
-          }
-          p {
-            font-family: 'Lato';
-            font-size: 9pt;
-            letter-spacing: 1pt;
-          }
-        }
-      }
-
-      .smallcircle {
-        border-radius: 200px;
-        background-color: #fcbcb8;
-        max-width: 121px;
-        max-height: 121px;
-        position: absolute;
-        top: 0%;
-        left: 50%;
-        transform: translate(50%, 75%);
-        z-index: -1;
-        box-shadow: 3px 27px 26px rgba(0, 0, 0, 0.3);
-        display: flex;
-        align-items:center;
-        justify-content: center;
-
-        .textbox {
-          // width: 162px;
-          // height: 162px;
-          padding-top: 66px;
-          padding-bottom: 66px;
-          padding-right: 33px;
-          padding-left: 36px;
-          
-          p {
-            font-family: 'Lato Italic';
-            font-size: 8pt;
-            letter-spacing: 1pt;
+  
+    // .centerpage {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+  
+      // .circleWrapper {
+      //   position: relative;
+      //   height: 80vh;
+  
+        .bigcircle {
+          border-radius: 200px;
+          background-color: #ffd972;
+          width: 258px;
+          height: 258px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+          display: flex;
+          align-items:center;
+          justify-content: center;
+  
+  
+          .textbox {
+            // width: 362px;
+            // height: 362px;
+            padding: 33px;
+            justify-content: space-evenly;
+            h1 {
+              font-family: 'Caveat Bold';
+              font-size: 20pt;
+            }
+            p {
+              font-family: 'Lato';
+              font-size: 12pt;
+              letter-spacing: 1pt;
+            }
           }
         }
-      }
+  
+        .smallcircle {
+          border-radius: 200px;
+          background-color: #fcbcb8;
+          width: 120px;
+          height: 120px;
+          position: absolute;
+          top: 28%;
+          left: 45%;
+          transform: translate(50%, 75%);
+          z-index: -1;
+          box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
+          display: flex;
+          align-items:center;
+          justify-content: center;
+  
+          .textbox {
+            // width: 162px;
+            // height: 162px;
+            padding: 23px;
+
+            
+            p {
+              font-family: 'Lato Italic';
+              font-size: 7pt;
+              letter-spacing: 1pt;
+            }
+          }
+        }
+      // }
     // }
-  // }
-}
+  }
 }
 

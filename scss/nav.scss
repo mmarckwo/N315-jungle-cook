@@ -84,14 +84,15 @@ nav {
 // TAB
 @media screen and (min-width: 768px) and (max-width: 1279px){
   nav {
-    width: 100%;
+    // width: 100vh;
     height: 80px;
     background-color: transparent;
     display: flex;
     font-family: "Caveat";
-    font-size: 20pt;
+    font-size: 18pt;
     justify-content: space-evenly;
     align-items: center;
+    // z-index: -50;
     // position: absolute;
   
     // @media (max-width: 1280em){
@@ -105,12 +106,13 @@ nav {
   
   
     .logo {
-      width: 137px;
-      height: 47px;
+      width: 127px;
+      height: 27px;
       align-items: left;
-      justify-content: left;
-      margin-left: 0px;
-      margin-right: 525px;  
+      justify-content: center;
+      margin-bottom: 23px;
+      margin-left: 25px;
+      margin-right: 100px;  
     }
   
     li, a {
@@ -119,7 +121,7 @@ nav {
       text-decoration: none;
       color: black;
       list-style-type: none;
-      font-size: 18pt;
+      font-size: 14pt;
       
   
       // a:hover {
@@ -141,10 +143,10 @@ nav {
   
   
     button {
-      width: 128px;
-      height: 22px;
+      width: 138px;
+      height: 52px;
       font-family: "Caveat";
-      font-size: 20pt;
+      font-size:  14pt;
       align-items: center;
       border-radius: 25px;
       border-style: none;
@@ -158,7 +160,7 @@ nav {
         display: flex;
         text-decoration: none;
         color: black;
-        font-size: 18pt;
+        font-size: 14pt;
       }
     }
   }
@@ -167,12 +169,12 @@ nav {
 // MOB
 @media screen and (min-width: 360px) and (max-width: 767px){
   nav {
-    width: 100%;
-    height: 105px;
+    // width: 100%;
+    height: 120px;
     background-color: transparent;
     display: flex;
     font-family: "Caveat";
-    font-size: 18pt;
+    font-size: 12pt;
     justify-content: space-evenly;
     align-items: center;
     // position: absolute;
@@ -188,21 +190,25 @@ nav {
   
   
     .logo {
-      width: 137px;
-      height: 47px;
+      img {
+      width: 125px;
+      height: 125px;
       align-items: left;
       justify-content: left;
-      margin-left: 0px;
-      margin-right: 125px;  
+      margin-left: 10px;
+      margin-right: 10px;  
+      }
+
     }
   
     li, a {
       justify-content: space-evenly;
-      align-items: center;
+      align-items:right;
+      // display: grid;
       text-decoration: none;
       color: black;
       list-style-type: none;
-      font-size: 16pt;
+      font-size: 9pt;
       
   
       // a:hover {
@@ -224,10 +230,10 @@ nav {
   
   
     button {
-      width: 128px;
+      width: 20px;
       height: 22px;
       font-family: "Caveat";
-      font-size: 18pt;
+      font-size: 9pt;
       align-items: center;
       border-radius: 25px;
       border-style: none;
@@ -241,7 +247,7 @@ nav {
         display: flex;
         text-decoration: none;
         color: black;
-        font-size: 18pt;
+        font-size: 9pt;
       }
     }
   }
