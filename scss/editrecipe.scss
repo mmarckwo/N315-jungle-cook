@@ -339,112 +339,112 @@
   
 }
 
-.create {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    max-width: 980px;
+// .create {
+//     justify-content: center;
+//     align-items: center;
+//     display: flex;
+//     height: 100vh;
+//     max-width: 980px;
   
-    .formHolder {
-      max-width: 980px;
-      margin: 0;
+//     .formHolder {
+//       max-width: 980px;
+//       margin: 0;
   
-      margin-top: 40px;
-      position: relative;
+//       margin-top: 40px;
+//       position: relative;
   
-      h1 {
-        font-family: "Caveat Bold";
-        font-size: 25pt;
-      }
-      .steps{
-        position: relative;
-        margin-bottom: 50px;
-        font-family: 'Lato';
+//       h1 {
+//         font-family: "Caveat Bold";
+//         font-size: 25pt;
+//       }
+//       .steps{
+//         position: relative;
+//         margin-bottom: 50px;
+//         font-family: 'Lato';
   
-        .addimage {
-          display: flex;
-        .step0 {
-          display: block;
-          width: 100%;
-          height: 50px;
-          margin-bottom: 10px;
-          border: none;
-          border-bottom: 2px solid black;
-        }
+//         .addimage {
+//           display: flex;
+//         .step0 {
+//           display: block;
+//           width: 100%;
+//           height: 50px;
+//           margin-bottom: 10px;
+//           border: none;
+//           border-bottom: 2px solid black;
+//         }
   
-        #step0 {
-          border-radius: 25px;
-          background-color: #EFA7A7;
-          border-style: none;
-        }
-        }
+//         #step0 {
+//           border-radius: 25px;
+//           background-color: #EFA7A7;
+//           border-style: none;
+//         }
+//         }
   
   
-      }
+//       }
   
-      .ingred {
-        position: relative;
-        margin-bottom: 50px;
-        font-family: 'Lato';
+//       .ingred {
+//         position: relative;
+//         margin-bottom: 50px;
+//         font-family: 'Lato';
   
-        h3 {
-          font-size: 20pt;
-        }
-      }
+//         h3 {
+//           font-size: 20pt;
+//         }
+//       }
 
-      .instructions {
-        position: relative;
-        margin-bottom: 50px;
-        font-family: 'Lato';
+//       .instructions {
+//         position: relative;
+//         margin-bottom: 50px;
+//         font-family: 'Lato';
   
-        h3 {
-          font-size: 20pt;
-        }
-      }
+//         h3 {
+//           font-size: 20pt;
+//         }
+//       }
   
-      input {
-        display: block;
-        width: 100%;
-        height: 50px;
-        margin-bottom: 10px;
-        border: none;
-        border-bottom: 2px solid black;
-      }
+//       input {
+//         display: block;
+//         width: 100%;
+//         height: 50px;
+//         margin-bottom: 10px;
+//         border: none;
+//         border-bottom: 2px solid black;
+//       }
   
-      .addbtn {
-        max-width: 38px;
-        max-height: 38px;
-        background-color: #EFA7A7;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        font-size: 50px;
-        border-radius: 50%;
-        cursor: pointer;
-        position: absolute;
-        right: 5px;
-        bottom: 5px;
+//       .addbtn {
+//         max-width: 38px;
+//         max-height: 38px;
+//         background-color: #EFA7A7;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         color: #fff;
+//         font-size: 50px;
+//         border-radius: 50%;
+//         cursor: pointer;
+//         position: absolute;
+//         right: 5px;
+//         bottom: 5px;
   
-        p {
-          margin: 5px;
-          user-select: none;
-          font-size: 20pt;
-          font-family: 'GilSans Light';
-        }
-      }
+//         p {
+//           margin: 5px;
+//           user-select: none;
+//           font-size: 20pt;
+//           font-family: 'GilSans Light';
+//         }
+//       }
   
-      #submitBtn {
-        background-color: #EFA7A7;
-        color: #000;
-        border-radius: 25px;
-        border-style: none;
-        font-family: 'Caveat';
-        font-size: 25pt;
-      }
+//       #submitBtn {
+//         background-color: #EFA7A7;
+//         color: #000;
+//         border-radius: 25px;
+//         border-style: none;
+//         font-family: 'Caveat';
+//         font-size: 25pt;
+//       }
   
   
-    }
-  }
+//     }
+//   }
   

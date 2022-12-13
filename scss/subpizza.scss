@@ -5,12 +5,17 @@
             .col{
                 display: flex;
                 .pza {
+                    img {
                     width: 468px;
                     height: 421px;
+                    border-radius: 28px;
+                    overflow: hidden;
+                    }                    
                 }
     
                 .desc {
-                    h2 {
+                    display: grid;
+                    h2, h3 {
                         font-family: 'Lato Black';
                         font-size: 25pt;
                     }
@@ -49,6 +54,8 @@
     
                     li {
                         list-style: none;
+                        font-family: 'Caveat';
+                        font-size: 20pt;
                     }
                 }
             }
@@ -64,6 +71,8 @@
                     text-decoration: none;
                     font-family: 'Caveat';
                     font-size: 20pt;
+                    text-decoration: none;
+                    color: #000;
                 }
             }
         }
@@ -71,148 +80,148 @@
 }
 
 // TAB
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-    .pizzarecipe {
-        .row{
-            .col{
-                display: flex;
-                .pza {
-                    width: 468px;
-                    height: 421px;
-                }
+// @media screen and (min-width: 768px) and (max-width: 1279px) {
+//     .pizzarecipe {
+//         .row{
+//             .col{
+//                 display: flex;
+//                 .pza {
+//                     width: 468px;
+//                     height: 421px;
+//                 }
     
-                .desc {
-                    h2 {
-                        font-family: 'Lato Black';
-                        font-size: 25pt;
-                    }
+//                 .desc {
+//                     h2 {
+//                         font-family: 'Lato Black';
+//                         font-size: 25pt;
+//                     }
     
-                    p {
-                        font-family: 'Caveat';
-                        font-size: 20pt;
-                    }
-                }
+//                     p {
+//                         font-family: 'Caveat';
+//                         font-size: 20pt;
+//                     }
+//                 }
     
-            }
+//             }
     
-            .col {
-                .ingredient {
-                    h2 {
-                    font-family: 'Lato Black';
-                    font-size: 25pt;
-                    }
+//             .col {
+//                 .ingredient {
+//                     h2 {
+//                     font-family: 'Lato Black';
+//                     font-size: 25pt;
+//                     }
     
-                    li {
-                        list-style: none;
-                        font-family: 'Caveat';
-                        font-size: 20pt;
-                    }
+//                     li {
+//                         list-style: none;
+//                         font-family: 'Caveat';
+//                         font-size: 20pt;
+//                     }
     
-                }
+//                 }
     
-            }
+//             }
     
-            .col {
-                .instructions {
-                    h2{
-                        font-family: 'Lato Black';
-                        font-size: 25pt;
-                    }
+//             .col {
+//                 .instructions {
+//                     h2{
+//                         font-family: 'Lato Black';
+//                         font-size: 25pt;
+//                     }
     
-                    li {
-                        list-style: none;
-                    }
-                }
-            }
+//                     li {
+//                         list-style: none;
+//                     }
+//                 }
+//             }
     
-            button {
-                width: 128px;
-                height: 42px;
-                background-color: #FFD972;
-                border-style: none;
-                border-radius: 25px;
+//             button {
+//                 width: 128px;
+//                 height: 42px;
+//                 background-color: #FFD972;
+//                 border-style: none;
+//                 border-radius: 25px;
     
-                a {
-                    text-decoration: none;
-                    font-family: 'Caveat';
-                    font-size: 20pt;
-                }
-            }
-        }
-    }
-}
+//                 a {
+//                     text-decoration: none;
+//                     font-family: 'Caveat';
+//                     font-size: 20pt;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-// MOB
-@media screen and (min-width: 360px) and (max-width: 767px) {
-    .pizzarecipe {
-        .row{
-            .col{
-                display: flex;
-                .pza {
-                    width: 468px;
-                    height: 421px;
-                }
+// // MOB
+// @media screen and (min-width: 360px) and (max-width: 767px) {
+//     .pizzarecipe {
+//         .row{
+//             .col{
+//                 display: flex;
+//                 .pza {
+//                     width: 468px;
+//                     height: 421px;
+//                 }
     
-                .desc {
-                    h2 {
-                        font-family: 'Lato Black';
-                        font-size: 25pt;
-                    }
+//                 .desc {
+//                     h2 {
+//                         font-family: 'Lato Black';
+//                         font-size: 25pt;
+//                     }
     
-                    p {
-                        font-family: 'Caveat';
-                        font-size: 20pt;
-                    }
-                }
+//                     p {
+//                         font-family: 'Caveat';
+//                         font-size: 20pt;
+//                     }
+//                 }
     
-            }
+//             }
     
-            .col {
-                .ingredient {
-                    h2 {
-                    font-family: 'Lato Black';
-                    font-size: 25pt;
-                    }
+//             .col {
+//                 .ingredient {
+//                     h2 {
+//                     font-family: 'Lato Black';
+//                     font-size: 25pt;
+//                     }
     
-                    li {
-                        list-style: none;
-                        font-family: 'Caveat';
-                        font-size: 20pt;
-                    }
+//                     li {
+//                         list-style: none;
+//                         font-family: 'Caveat';
+//                         font-size: 20pt;
+//                     }
     
-                }
+//                 }
     
-            }
+//             }
     
-            .col {
-                .instructions {
-                    h2{
-                        font-family: 'Lato Black';
-                        font-size: 25pt;
-                    }
+//             .col {
+//                 .instructions {
+//                     h2{
+//                         font-family: 'Lato Black';
+//                         font-size: 25pt;
+//                     }
     
-                    li {
-                        list-style: none;
-                    }
-                }
-            }
+//                     li {
+//                         list-style: none;
+//                     }
+//                 }
+//             }
     
-            button {
-                width: 128px;
-                height: 42px;
-                background-color: #FFD972;
-                border-style: none;
-                border-radius: 25px;
+//             button {
+//                 width: 128px;
+//                 height: 42px;
+//                 background-color: #FFD972;
+//                 border-style: none;
+//                 border-radius: 25px;
     
-                a {
-                    text-decoration: none;
-                    font-family: 'Caveat';
-                    font-size: 20pt;
-                }
-            }
-        }
-    }
-}
+//                 a {
+//                     text-decoration: none;
+//                     font-family: 'Caveat';
+//                     font-size: 20pt;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 // .pizzarecipe {
 //     .row{

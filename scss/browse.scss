@@ -3,10 +3,10 @@
   .browse {
     // height: 100vh;
     .hero {
-      width: 100vw;
-      height: 100vh;
+      // width: 100vw;
+      // height: 100vh;
       background-color: #a7e8bd;
-      // z-index: -1;
+      z-index: -1;
       // position: fixed;
       // bottom: 0;
       // right: 0;
@@ -18,18 +18,21 @@
         }
       }
     }
-      .title {
-        font-family: "Caveat Bold";
-      }
     .content {
-      // position: absolute;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 50%;
+      top: 70%;
       left: 50%;
       transform: translate(-50%, -50%);
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      // margin: 105px;
 
+
+      .title {
+        font-family: "Caveat Bold";
+        font-size: 25pt;
+
+      }
 
       .row {
         .col {

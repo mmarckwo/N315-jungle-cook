@@ -385,9 +385,8 @@ p {
     align-items: center;
   }
   .home .hero {
-    width: 100vw;
-    height: 100vh;
     background-color: #f25c54;
+    z-index: -1;
   }
   .home .hero .heroimg img {
     width: 100vw;
@@ -399,7 +398,7 @@ p {
     width: 358px;
     height: 358px;
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
@@ -425,7 +424,7 @@ p {
     max-width: 168px;
     max-height: 168px;
     position: absolute;
-    top: 0%;
+    top: 25%;
     left: 50%;
     transform: translate(50%, 75%);
     z-index: -1;
@@ -584,24 +583,24 @@ p {
 }
 @media screen and (min-width: 1280px) and (max-width: 1920px) {
   .browse .hero {
-    width: 100vw;
-    height: 100vh;
     background-color: #a7e8bd;
+    z-index: -1;
   }
   .browse .hero .heroimg img {
     width: 100vw;
     opacity: 30%;
   }
-  .browse .title {
-    font-family: "Caveat Bold";
-  }
   .browse .content {
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+  .browse .content .title {
+    font-family: "Caveat Bold";
+    font-size: 25pt;
   }
   .browse .content .row .col {
     display: flex;
@@ -863,11 +862,16 @@ p {
   .pizzarecipe .row .col {
     display: flex;
   }
-  .pizzarecipe .row .col .pza {
+  .pizzarecipe .row .col .pza img {
     width: 468px;
     height: 421px;
+    border-radius: 28px;
+    overflow: hidden;
   }
-  .pizzarecipe .row .col .desc h2 {
+  .pizzarecipe .row .col .desc {
+    display: grid;
+  }
+  .pizzarecipe .row .col .desc h2, .pizzarecipe .row .col .desc h3 {
     font-family: "Lato Black";
     font-size: 25pt;
   }
@@ -890,6 +894,8 @@ p {
   }
   .pizzarecipe .row .col .instructions li {
     list-style: none;
+    font-family: "Caveat";
+    font-size: 20pt;
   }
   .pizzarecipe .row button {
     width: 128px;
@@ -902,96 +908,8 @@ p {
     text-decoration: none;
     font-family: "Caveat";
     font-size: 20pt;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .pizzarecipe .row .col {
-    display: flex;
-  }
-  .pizzarecipe .row .col .pza {
-    width: 468px;
-    height: 421px;
-  }
-  .pizzarecipe .row .col .desc h2 {
-    font-family: "Lato Black";
-    font-size: 25pt;
-  }
-  .pizzarecipe .row .col .desc p {
-    font-family: "Caveat";
-    font-size: 20pt;
-  }
-  .pizzarecipe .row .col .ingredient h2 {
-    font-family: "Lato Black";
-    font-size: 25pt;
-  }
-  .pizzarecipe .row .col .ingredient li {
-    list-style: none;
-    font-family: "Caveat";
-    font-size: 20pt;
-  }
-  .pizzarecipe .row .col .instructions h2 {
-    font-family: "Lato Black";
-    font-size: 25pt;
-  }
-  .pizzarecipe .row .col .instructions li {
-    list-style: none;
-  }
-  .pizzarecipe .row button {
-    width: 128px;
-    height: 42px;
-    background-color: #FFD972;
-    border-style: none;
-    border-radius: 25px;
-  }
-  .pizzarecipe .row button a {
     text-decoration: none;
-    font-family: "Caveat";
-    font-size: 20pt;
-  }
-}
-@media screen and (min-width: 360px) and (max-width: 767px) {
-  .pizzarecipe .row .col {
-    display: flex;
-  }
-  .pizzarecipe .row .col .pza {
-    width: 468px;
-    height: 421px;
-  }
-  .pizzarecipe .row .col .desc h2 {
-    font-family: "Lato Black";
-    font-size: 25pt;
-  }
-  .pizzarecipe .row .col .desc p {
-    font-family: "Caveat";
-    font-size: 20pt;
-  }
-  .pizzarecipe .row .col .ingredient h2 {
-    font-family: "Lato Black";
-    font-size: 25pt;
-  }
-  .pizzarecipe .row .col .ingredient li {
-    list-style: none;
-    font-family: "Caveat";
-    font-size: 20pt;
-  }
-  .pizzarecipe .row .col .instructions h2 {
-    font-family: "Lato Black";
-    font-size: 25pt;
-  }
-  .pizzarecipe .row .col .instructions li {
-    list-style: none;
-  }
-  .pizzarecipe .row button {
-    width: 128px;
-    height: 42px;
-    background-color: #FFD972;
-    border-style: none;
-    border-radius: 25px;
-  }
-  .pizzarecipe .row button a {
-    text-decoration: none;
-    font-family: "Caveat";
-    font-size: 20pt;
+    color: #000;
   }
 }
 .burgrecipe .row .col {
@@ -1420,18 +1338,19 @@ p {
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1920px) {
-  .yourrecipes {
-    height: 100vh;
-  }
   .yourrecipes .hero {
-    height: 100vh;
     background-color: #a7e8bd;
+    z-index: -1;
   }
   .yourrecipes .hero .heroimg img {
     width: 100vw;
     opacity: 30%;
   }
   .yourrecipes .content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
     justify-content: center;
     align-items: center;
     margin: 75px;
@@ -1439,8 +1358,6 @@ p {
   .yourrecipes .content .title {
     font-family: "Caveat Bold";
     font-size: 25pt;
-    margin-left: 115px;
-    margin-bottom: 50px;
   }
   .yourrecipes .content .row .col {
     display: flex;
@@ -1804,7 +1721,7 @@ p {
     height: 100vh;
   }
   .create .formHolder {
-    width: 980px;
+    width: 100vw;
     margin: 0;
     margin-top: 40px;
     position: relative;
@@ -2340,97 +2257,6 @@ p {
     font-family: "Caveat";
     font-size: 25pt;
   }
-}
-.create {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 100vh;
-  max-width: 980px;
-}
-.create .formHolder {
-  max-width: 980px;
-  margin: 0;
-  margin-top: 40px;
-  position: relative;
-}
-.create .formHolder h1 {
-  font-family: "Caveat Bold";
-  font-size: 25pt;
-}
-.create .formHolder .steps {
-  position: relative;
-  margin-bottom: 50px;
-  font-family: "Lato";
-}
-.create .formHolder .steps .addimage {
-  display: flex;
-}
-.create .formHolder .steps .addimage .step0 {
-  display: block;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 10px;
-  border: none;
-  border-bottom: 2px solid black;
-}
-.create .formHolder .steps .addimage #step0 {
-  border-radius: 25px;
-  background-color: #EFA7A7;
-  border-style: none;
-}
-.create .formHolder .ingred {
-  position: relative;
-  margin-bottom: 50px;
-  font-family: "Lato";
-}
-.create .formHolder .ingred h3 {
-  font-size: 20pt;
-}
-.create .formHolder .instructions {
-  position: relative;
-  margin-bottom: 50px;
-  font-family: "Lato";
-}
-.create .formHolder .instructions h3 {
-  font-size: 20pt;
-}
-.create .formHolder input {
-  display: block;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 10px;
-  border: none;
-  border-bottom: 2px solid black;
-}
-.create .formHolder .addbtn {
-  max-width: 38px;
-  max-height: 38px;
-  background-color: #EFA7A7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 50px;
-  border-radius: 50%;
-  cursor: pointer;
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-}
-.create .formHolder .addbtn p {
-  margin: 5px;
-  user-select: none;
-  font-size: 20pt;
-  font-family: "GilSans Light";
-}
-.create .formHolder #submitBtn {
-  background-color: #EFA7A7;
-  color: #000;
-  border-radius: 25px;
-  border-style: none;
-  font-family: "Caveat";
-  font-size: 25pt;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,10 +2,10 @@
 @media screen and (min-width: 1280px) and (max-width: 1920px){
   .home {
   .hero {
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
+    // height: 100vh;
     background-color: #f25c54;
-    // z-index: -1;
+    z-index: -1;
     // position: fixed;
     // bottom: 0;
     // right: 0;
@@ -34,7 +34,7 @@
         width: 358px;
         height: 358px;
         position: absolute;
-        top: 50%;
+        top: 80%;
         left: 50%;
         transform: translate(-50%, -50%);
         box-shadow: 6px 30px 29px rgba(0, 0, 0, 0.3);
@@ -65,7 +65,7 @@
         max-width: 168px;
         max-height: 168px;
         position: absolute;
-        top: 0%;
+        top: 25%;
         left: 50%;
         transform: translate(50%, 75%);
         z-index: -1;
